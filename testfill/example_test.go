@@ -2,6 +2,8 @@ package testfill
 
 import (
 	"fmt"
+
+	"github.com/winezer0/basecrawler"
 )
 
 // ExampleGenerateRequests 演示完整链路：采集结果（含 curl 代码块与

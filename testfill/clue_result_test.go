@@ -2,6 +2,8 @@ package testfill
 
 import (
 	"testing"
+
+	"github.com/winezer0/basecrawler"
 )
 
 // TestIsClueResult：线索判定基于语义字段（StatusCode / Confidence / Kind），

@@ -8,6 +8,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/winezer0/basecrawler"
 	"github.com/winezer0/basecrawler/extractor"
 	"github.com/winezer0/basecrawler/fetcher"
 	"github.com/winezer0/basecrawler/safety"

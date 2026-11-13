@@ -4,6 +4,7 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/winezer0/basecrawler"
 	"github.com/winezer0/basecrawler/extractor"
 )
 
