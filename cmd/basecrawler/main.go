@@ -23,6 +23,7 @@ import (
 	"sync"
 	"syscall"
 
+	"github.com/winezer0/basecrawler"
 	"github.com/winezer0/basecrawler/fetcher"
 	"github.com/winezer0/basecrawler/testfill"
 )

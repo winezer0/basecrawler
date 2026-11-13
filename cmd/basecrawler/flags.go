@@ -14,6 +14,7 @@ import (
 	"time"
 
 	"github.com/alecthomas/kong"
+	"github.com/winezer0/basecrawler"
 	"github.com/winezer0/basecrawler/safety"
 )
 

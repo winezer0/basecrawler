@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/winezer0/basecrawler"
 	"github.com/winezer0/basecrawler/testfill"
 )
 

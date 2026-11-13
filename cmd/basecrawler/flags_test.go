@@ -7,6 +7,8 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/winezer0/basecrawler"
 )
 
 // TestParseArgsDefaults 锁定「不给任何可选参数时的映射」。
