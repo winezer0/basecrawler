@@ -1,0 +1,28 @@
+{
+  "target_host": "news.ycombinator.com",
+  "generated_at": "",
+  "tools": {
+    "hakrawler": {
+      "status": "no_output"
+    },
+    "gospider": {
+      "status": "no_output"
+    },
+    "cariddi": {
+      "status": "no_output"
+    },
+    "URLFinder-m1": {
+      "status": "no_output"
+    },
+    "URLFinder-m2": {
+      "status": "no_output"
+    },
+    "assetcrawler": {
+      "status": "ok",
+      "inside_unique": 306,
+      "outside_unique": 8,
+      "raw_count": 314
+    }
+  },
+  "union_inside": 306
+}

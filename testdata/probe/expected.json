@@ -1,0 +1,184 @@
+{
+  "description": "URL 载体验收夹具。每个条目是一种『URL 可能出现的位置』，implemented 表示当前是否已覆盖。check.py 会校验这个字段与实际是否一致，不一致会打印『记录与实际不符』——记录过期时请更新本文件。",
+  "target": "由 check.py 决定：默认端口空闲则用 18080，否则自动选空闲端口，也可用 --port 指定",
+  "cases": [
+    {
+      "url": "/normal-link",
+      "via": "a[href]",
+      "implemented": true
+    },
+    {
+      "url": "/css-inline/hero.jpg",
+      "via": "style 块 url()",
+      "implemented": true
+    },
+    {
+      "url": "/canonical-page",
+      "via": "link[rel=canonical][href]",
+      "implemented": true
+    },
+    {
+      "url": "/style.css",
+      "via": "link[href]",
+      "implemented": true
+    },
+    {
+      "url": "/app.js",
+      "via": "script[src]",
+      "implemented": true
+    },
+    {
+      "url": "/app.js.map",
+      "via": "sourceMappingURL 注释",
+      "implemented": true
+    },
+    {
+      "url": "/chunk-login.js",
+      "via": "JS import(\"./x.js\")",
+      "implemented": true
+    },
+    {
+      "url": "/api/debug/config",
+      "via": "JS 字符串拼接（应求值）",
+      "implemented": true
+    },
+    {
+      "url": "/v2/orders",
+      "via": "JS 变量拼接（常量传播）",
+      "implemented": true
+    },
+    {
+      "url": "/shared/og-page",
+      "via": "meta[property=og:url]",
+      "implemented": true
+    },
+    {
+      "url": "/img/twitter-card.png",
+      "via": "meta[name=twitter:image]",
+      "implemented": true
+    },
+    {
+      "url": "/api/from-data-attr",
+      "via": "data-* 自定义属性",
+      "implemented": true
+    },
+    {
+      "url": "/csp-report-endpoint",
+      "via": "CSP 响应头 report-uri",
+      "implemented": true
+    },
+    {
+      "url": "https://api.internal.example.com",
+      "via": "CSP connect-src",
+      "implemented": true
+    },
+    {
+      "url": "/css-file/bg.jpg",
+      "via": "CSS 文件内 url()",
+      "implemented": true
+    },
+    {
+      "url": "/fonts/inter.woff2",
+      "via": "CSS 文件内 @font-face",
+      "implemented": true
+    },
+    {
+      "url": "/api/page/2",
+      "via": "JSON 响应体的 next 字段",
+      "implemented": true
+    },
+    {
+      "url": "/api/items/1",
+      "via": "JSON 响应体的 links.self",
+      "implemented": true
+    },
+    {
+      "url": "/src/api/order.js",
+      "via": "sourcemap 的 sources 列表",
+      "implemented": true
+    },
+    {
+      "url": "/inline-json/nuxt-page",
+      "via": "script#__NUXT_DATA__ 的 hydration JSON",
+      "implemented": true
+    }
+  ],
+  "known_noise": [
+    {
+      "url": "/api/",
+      "reason": "JS 拼接碎片，应被求值合并而非独立成条"
+    },
+    {
+      "url": "/config",
+      "reason": "同上"
+    },
+    {
+      "url": "/v2",
+      "reason": "同上"
+    },
+    {
+      "url": "/orders",
+      "reason": "同上"
+    }
+  ],
+  "method_cases": [
+    {
+      "url": "/login",
+      "method": "POST",
+      "via": "form[method=post]",
+      "implemented": true
+    },
+    {
+      "url": "/search",
+      "method": "GET",
+      "via": "form[method=get]",
+      "implemented": true
+    },
+    {
+      "url": "/api/users",
+      "method": "POST",
+      "via": "axios.post",
+      "implemented": true
+    },
+    {
+      "url": "/api/users/1",
+      "method": "DELETE",
+      "via": "axios.delete",
+      "implemented": true
+    },
+    {
+      "url": "/api/items",
+      "method": "PUT",
+      "via": "fetch({method:'PUT'})",
+      "implemented": true
+    }
+  ],
+  "param_cases": [
+    {
+      "url": "/search",
+      "params": [
+        "q",
+        "page"
+      ],
+      "via": "form input name",
+      "implemented": true
+    },
+    {
+      "url": "/api/list",
+      "params": [
+        "page",
+        "size"
+      ],
+      "via": "$.get 第二参数",
+      "implemented": true
+    },
+    {
+      "url": "/api/users",
+      "params": [
+        "role"
+      ],
+      "via": "axios params 对象",
+      "implemented": true
+    }
+  ]
+}

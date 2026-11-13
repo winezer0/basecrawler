@@ -1,0 +1,45 @@
+{
+  "gate": "Q-2 二段路径召回（空产出回退 + 单段/二段放宽）",
+  "date": "2026-11-09",
+  "verdicts": {
+    "empty_output_fallback": {
+      "verdict": "实施",
+      "change": "adaptEngine：引擎 err==nil 但零产出时继续下探链中下一个引擎（此前直接采用空结果）",
+      "remix_run": {
+        "new_auto": 169,
+        "old_auto": 168,
+        "net_new": 4
+      },
+      "new_urls_sample": [
+        "https://a.nel.cloudflare.com/report/v4?s=4kvVK9kEwd9mZsYnUfwggSfCWv2Q6g%2BDQbm7T5LjvT1iilmYEHyvteri%2FdXQ%2BdRMq3EG1t7G%2BYfERW1M5iupQ57XeRawBY2daFHBUMEs2tZASuDeYXzICchKfyY3",
+        "https://a.nel.cloudflare.com/report/v4?s=oK0VJFMfjjv%2FcJI4oCnvhlm0y94RGG48Mt%2Bb6geJbxS%2FthmVb38cEQZxGlHo6GDMowF1CTQN5vJsfpKVWpBKGJE2qrdIRHdaM2%2FQaXqYocQoLdZAhArSHVScjDolcJS7nw%3D%3D",
+        "https://remix.run/assets/npm/.pnpm/%40remix-run%2Bcomponent%401.2.0/node_modules/%40remix-run/component/dist/runtime/diff-dom.@2Rw6N5.js",
+        "https://remix.run/assets/npm/.pnpm/%40remix-run%2Bcomponent%401.2.0/node_modules/%40remix-run/component/dist/style/css-mixin.@P-grNQ.js"
+      ],
+      "noise": "零新增噪音——回退仅在 AST 零产出时触发，无叠加路径"
+    },
+    "relax_to_2seg": {
+      "verdict": "不实施（前提不成立，非噪音否决）",
+      "evidence": [
+        "extractor fromJSRegex 本就含单段引号路径：/login、/pricing 均能提取",
+        "treesitter/goja Extract 同样能提单段：fetch(\"/login\") → url=\"/login\"",
+        "真实站 vercel.com auto 档单段路径全部来自 robots 来源（非 JS）",
+        "remix.run auto 档 js-ast 30 条，已含所需路径形态"
+      ],
+      "conclusion": "已有能力覆盖，无「放宽」可做；O-2 记录的前提（AST 只能提 3 段以上）是误判"
+    },
+    "engine_ab": {
+      "remix_run": {
+        "auto": 169,
+        "regex": 58
+      },
+      "note": "AST 链主导召回（169 vs 58）；regex 档单段路径靠正则兜底"
+    },
+    "sourcemap_defer": {
+      "verdict": "实施",
+      "finding": "O-4 记录的归一化能力本就完整实现（normalizeSourcePath 覆盖 webpack://、./、绝对路径、sourceRoot，crawler.go:306 已接入），O-4「不做」仅基于 live 3%，按「以获取到 URL 资源为准」判据不成立",
+      "actual_gap": "sourcemap sources 未纳入 deferPage——单站 202 条路径与同层 JS/CSS 抢配额（inline-json 同类问题）",
+      "change": "抽出 shouldDeferPage 纯函数：noisy / inline-json: / sourcemap+sources 三类延后分区，不丢弃"
+    }
+  }
+}

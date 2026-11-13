@@ -1,0 +1,8 @@
+[
+  {"name": "reqres", "url": "https://reqres.in/", "note": "前端 demo 直接 fetch /api/users（2 段）"},
+  {"name": "gh-rest-docs", "url": "https://docs.github.com/en/rest/repos/repos", "note": "文档站 JS bundle"},
+  {"name": "jsonplaceholder", "url": "https://jsonplaceholder.typicode.com/", "note": "演示站"},
+  {"name": "pokeapi", "url": "https://pokeapi.co/", "note": "SPA 文档站"},
+  {"name": "openlibrary", "url": "https://openlibrary.org/", "note": "传统站 + JS"},
+  {"name": "httpbin", "url": "https://httpbin.org/", "note": "工具站（低预期对照组）"}
+]

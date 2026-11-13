@@ -1,0 +1,509 @@
+[
+  {
+    "host": "astro.build",
+    "final_host": "astro.build",
+    "results": 294,
+    "sample_valid": true,
+    "carriers": {
+      "link-header": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-preload": {
+        "found": 2,
+        "covered": 2,
+        "unique": 0,
+        "items": []
+      },
+      "link-modulepreload": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-manifest": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "importmap": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "manifest-content": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "serviceworker": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "hydration-script": {
+        "found": 0,
+        "covered": null,
+        "unique": null,
+        "items": []
+      },
+      "sveltekit-data": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      }
+    }
+  },
+  {
+    "host": "qwik.dev",
+    "final_host": "qwik.dev",
+    "results": 295,
+    "sample_valid": true,
+    "carriers": {
+      "link-header": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-preload": {
+        "found": 4,
+        "covered": 4,
+        "unique": 0,
+        "items": []
+      },
+      "link-modulepreload": {
+        "found": 3,
+        "covered": 3,
+        "unique": 0,
+        "items": []
+      },
+      "link-manifest": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "importmap": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "manifest-content": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "serviceworker": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "hydration-script": {
+        "found": 0,
+        "covered": null,
+        "unique": null,
+        "items": []
+      },
+      "sveltekit-data": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      }
+    }
+  },
+  {
+    "host": "angular.dev",
+    "final_host": "angular.dev",
+    "results": 298,
+    "sample_valid": true,
+    "carriers": {
+      "link-header": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-preload": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-modulepreload": {
+        "found": 12,
+        "covered": 12,
+        "unique": 0,
+        "items": []
+      },
+      "link-manifest": {
+        "found": 1,
+        "covered": 1,
+        "unique": 0,
+        "items": []
+      },
+      "importmap": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "manifest-content": {
+        "found": 2,
+        "covered": 0,
+        "unique": 2,
+        "items": [
+          "angular.dev/assets/icons/android-chrome-192x192.png",
+          "angular.dev/assets/icons/android-chrome-512x512.png"
+        ]
+      },
+      "serviceworker": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "hydration-script": {
+        "found": 1,
+        "covered": null,
+        "unique": null,
+        "items": [
+          "ng-state"
+        ]
+      },
+      "sveltekit-data": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      }
+    }
+  },
+  {
+    "host": "kit.svelte.dev",
+    "final_host": "svelte.dev",
+    "results": 291,
+    "sample_valid": true,
+    "carriers": {
+      "link-header": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-preload": {
+        "found": 3,
+        "covered": 3,
+        "unique": 0,
+        "items": []
+      },
+      "link-modulepreload": {
+        "found": 24,
+        "covered": 24,
+        "unique": 0,
+        "items": []
+      },
+      "link-manifest": {
+        "found": 1,
+        "covered": 1,
+        "unique": 0,
+        "items": []
+      },
+      "importmap": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "manifest-content": {
+        "found": 1,
+        "covered": 1,
+        "unique": 0,
+        "items": []
+      },
+      "serviceworker": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "hydration-script": {
+        "found": 0,
+        "covered": null,
+        "unique": null,
+        "items": []
+      },
+      "sveltekit-data": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      }
+    }
+  },
+  {
+    "host": "remix.run",
+    "final_host": "remix.run",
+    "results": 296,
+    "sample_valid": true,
+    "carriers": {
+      "link-header": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-preload": {
+        "found": 2,
+        "covered": 2,
+        "unique": 0,
+        "items": []
+      },
+      "link-modulepreload": {
+        "found": 109,
+        "covered": 109,
+        "unique": 0,
+        "items": []
+      },
+      "link-manifest": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "importmap": {
+        "found": 130,
+        "covered": 130,
+        "unique": 0,
+        "items": []
+      },
+      "manifest-content": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "serviceworker": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "hydration-script": {
+        "found": 1,
+        "covered": null,
+        "unique": null,
+        "items": [
+          "rmx-data"
+        ]
+      },
+      "sveltekit-data": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      }
+    }
+  },
+  {
+    "host": "docs.solidjs.com",
+    "final_host": "docs.solidjs.com",
+    "results": 287,
+    "sample_valid": true,
+    "carriers": {
+      "link-header": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-preload": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-modulepreload": {
+        "found": 2,
+        "covered": 2,
+        "unique": 0,
+        "items": []
+      },
+      "link-manifest": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "importmap": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "manifest-content": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "serviceworker": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "hydration-script": {
+        "found": 0,
+        "covered": null,
+        "unique": null,
+        "items": []
+      },
+      "sveltekit-data": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      }
+    }
+  },
+  {
+    "host": "turbo.build",
+    "final_host": "turborepo.dev",
+    "results": 1,
+    "sample_valid": false,
+    "carriers": {
+      "link-header": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-preload": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-modulepreload": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-manifest": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "importmap": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "manifest-content": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "serviceworker": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "hydration-script": {
+        "found": 0,
+        "covered": null,
+        "unique": null,
+        "items": []
+      },
+      "sveltekit-data": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      }
+    }
+  },
+  {
+    "host": "nuxt.com",
+    "final_host": "nuxt.com",
+    "results": 311,
+    "sample_valid": true,
+    "carriers": {
+      "link-header": {
+        "found": 10,
+        "covered": 9,
+        "unique": 1,
+        "items": [
+          "nuxt.com/docs"
+        ]
+      },
+      "link-preload": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "link-modulepreload": {
+        "found": 99,
+        "covered": 99,
+        "unique": 0,
+        "items": []
+      },
+      "link-manifest": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "importmap": {
+        "found": 1,
+        "covered": 1,
+        "unique": 0,
+        "items": []
+      },
+      "manifest-content": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "serviceworker": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      },
+      "hydration-script": {
+        "found": 1,
+        "covered": null,
+        "unique": null,
+        "items": [
+          "__NUXT_DATA__"
+        ]
+      },
+      "sveltekit-data": {
+        "found": 0,
+        "covered": 0,
+        "unique": 0,
+        "items": []
+      }
+    }
+  }
+]

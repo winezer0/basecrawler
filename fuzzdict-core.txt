@@ -1,0 +1,55 @@
+# 内置高价值子集：面向 API / 接口发现，默认探测。
+# 完整 154 条字典见 fuzzdict.txt，可用 --fuzz-dict fuzzdict.txt 追加（自动去重）。
+# API 入口
+/api
+/api/v1
+/api/v2
+/api/v3
+/api/docs
+/api/swagger
+/apidocs
+/graphql
+/graphiql
+/api/graphql
+/gateway
+/ws
+/wsd
+/service
+/services
+# 契约与文档
+/swagger
+/swagger-ui
+/swagger/index.html
+/swagger.yaml
+/openapi.yaml
+/docs
+/documentation
+# 认证与后台
+/login
+/signin
+/register
+/auth
+/oauth
+/oauth/authorize
+/admin
+/admin/login
+/console
+/dashboard
+/manager
+/manager/html
+# 健康检查与监控
+/health
+/healthz
+/healthcheck
+/status
+/metrics
+/actuator
+/actuator/env
+/actuator/mappings
+/debug
+/pprof/
+/debug/pprof/
+# 配置与凭证泄漏（常直接暴露接口）
+/.env
+/.git/config
+/.aws/credentials

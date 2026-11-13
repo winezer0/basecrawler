@@ -1,0 +1,535 @@
+{
+  "sites": [
+    {
+      "domain": "google.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "facebook.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "youtube.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "instagram.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "linkedin.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "twitter.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "apple.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "w2rt6byl5nf1opmc-a.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "domain": "googletagmanager.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "microsoft.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "github.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 3 column 1 (char 2)"
+    },
+    {
+      "domain": "wikipedia.org",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "domain": "play.google.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "apps.apple.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "youtu.be",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "x.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "wordpress.org",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "goo.gl",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "wa.me",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "en.wikipedia.org",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    {
+      "domain": "maps.google.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "pinterest.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "tiktok.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "docs.google.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "whatsapp.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "policies.google.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "vimeo.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "nginx.org",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "f5.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "URLError: <urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    {
+      "domain": "nginx.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "amazon.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "maps.app.goo.gl",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.whatsapp.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "t.me",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "drive.google.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "mozilla.org",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "europa.eu",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "domain": "support.google.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "adobe.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "domain": "wordpress.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "bit.ly",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    },
+    {
+      "domain": "blogspot.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "player.vimeo.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "apache.org",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "github.io",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "plus.google.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "domain": "support.microsoft.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "nih.gov",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "reddit.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 2 column 3 (char 3)"
+    },
+    {
+      "domain": "forms.gle",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.stripe.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "gitlab.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.github.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "petstore.swagger.io",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.slack.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.notion.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "httpbin.org",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.cloudflare.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "docs.api.github.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "testasp.vulnweb.com": {
+    "verdict": "零差异",
+    "reasons": [
+      "基线消失的 27 条在旧 / 新两次采样中完全一致，属站点自身变化",
+      "旧 / 新同时段逐条相同，唯一变量没有产生任何差异"
+    ],
+    "counts": {
+      "baseline": 67,
+      "old1": 40,
+      "new1": 40,
+      "old2": null,
+      "new2": null
+    },
+    "baseline_to_new": {
+      "added": 0,
+      "lost": 27
+    },
+    "baseline_to_old": {
+      "added": 0,
+      "lost": 27
+    },
+    "baseline_lost_matches": true,
+    "old_to_new": {
+      "added": 0,
+      "lost": 0
+    },
+    "old_repeat": null,
+    "new_repeat": null,
+    "noise_ceiling": null,
+    "hard_lost": [],
+    "lost_hosts": {},
+    "added_hosts": {},
+    "stable_diff": {
+      "added": 0,
+      "lost": 0
+    }
+  },
+  "vuejs.org": {
+    "verdict": "需人工复核",
+    "reasons": [
+      "以下 URL 在旧代码两次采样中都存在、新代码两次采样中都缺失",
+      "同二进制连跑噪声上限 5 条（旧 5 / 新 1）",
+      "稳定缺失 2 条不超过连跑噪声，倾向抽样波动",
+      "结果数 297 接近配额 300，差集可能只是抽样不同"
+    ],
+    "counts": {
+      "baseline": 297,
+      "old1": 297,
+      "new1": 297,
+      "old2": 296,
+      "new2": 296
+    },
+    "baseline_to_new": {
+      "added": 17,
+      "lost": 17
+    },
+    "baseline_to_old": {
+      "added": 19,
+      "lost": 19
+    },
+    "baseline_lost_matches": false,
+    "old_to_new": {
+      "added": 5,
+      "lost": 5
+    },
+    "old_repeat": {
+      "added": 2,
+      "lost": 3
+    },
+    "new_repeat": {
+      "added": 0,
+      "lost": 1
+    },
+    "noise_ceiling": 5,
+    "hard_lost": [
+      "ru.vuejs.org/index.html",
+      "vuejs.org/index.html"
+    ],
+    "lost_hosts": {
+      "play.vuejs.org": 3,
+      "ru.vuejs.org": 1,
+      "vuejs.org": 1
+    },
+    "added_hosts": {
+      "v3-migration.vuejs.org": 5
+    },
+    "stable_diff": {
+      "added": 5,
+      "lost": 5
+    }
+  },
+  "vite.dev": {
+    "verdict": "无回退证据",
+    "reasons": [
+      "以下 URL 在旧代码两次采样中都存在、新代码两次采样中都缺失",
+      "差集全部落在子域且增删成对，符合配额饱和下的子域轮换",
+      "结果数 293 接近配额 300，差集可能只是抽样不同"
+    ],
+    "counts": {
+      "baseline": 293,
+      "old1": 293,
+      "new1": 293,
+      "old2": null,
+      "new2": null
+    },
+    "baseline_to_new": {
+      "added": 2,
+      "lost": 2
+    },
+    "baseline_to_old": {
+      "added": 14,
+      "lost": 14
+    },
+    "baseline_lost_matches": false,
+    "old_to_new": {
+      "added": 12,
+      "lost": 12
+    },
+    "old_repeat": null,
+    "new_repeat": null,
+    "noise_ceiling": null,
+    "hard_lost": [
+      "v3.vite.dev/assets/app.422bfc7b.js",
+      "v3.vite.dev/assets/chunks/VPAlgoliaSearchBox.9001e1fe.js",
+      "v3.vite.dev/assets/chunks/ui-custom.330db2cd.js",
+      "v3.vite.dev/assets/index.md.947c3680.lean.js",
+      "v3.vite.dev/assets/style.b3de8bc3.css",
+      "v3.vite.dev/config",
+      "v3.vite.dev/guide",
+      "v3.vite.dev/guide/why",
+      "v3.vite.dev/logo-with-shadow.png",
+      "v3.vite.dev/logo.svg",
+      "v3.vite.dev/plugins",
+      "v3.vite.dev/team"
+    ],
+    "lost_hosts": {
+      "v3.vite.dev": 12
+    },
+    "added_hosts": {
+      "v5.vite.dev": 12
+    },
+    "stable_diff": {
+      "added": 12,
+      "lost": 12
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "gate": "P-1 OpenAPI/Swagger spec 暴露率闸门",
+  "date": "2026-11-09",
+  "verdict": "不做（总体暴露率 2.4% << 10% 阈值）；口径修正过程诚实留档",
+  "segments": {
+    "majestic_top50": {
+      "valid": 33,
+      "exposed": 0,
+      "rate": "0.0%",
+      "note": "顶级流量站零暴露——spec 不是主流站的能力"
+    },
+    "api_dedicated_subset": {
+      "valid": 8,
+      "exposed": 1,
+      "rate": "12.5%",
+      "note": "特意选的 API 站；唯一暴露是 petstore.swagger.io（Swagger demo 站，14 paths）"
+    }
+  },
+  "calibration_fix": {
+    "issue": "初版候选表漏 Swagger 2.0 生态标准路径 /v2/swagger.json",
+    "evidence": "petstore.swagger.io/v2/swagger.json 实测 200/13.8KB 真 spec",
+    "fix": "候选表补 /v2/swagger.json、/api/v2/swagger.json、/rest/v2/swagger.json、/swagger/v2/swagger.json",
+    "lesson": "闸门 0% 结论先复查候选表覆盖，再信结论（与 O 批次 URL 编码、配额口径同类修正）"
+  },
+  "candidates": 14,
+  "threshold": "10%",
+  "future": "若将来要做 opt-in 探测（-probe-openapi），候选表与 looks_like_spec/classify_spec 已就绪；主流站 0% 说明它只能是 opt-in 不可能是默认能力"
+}

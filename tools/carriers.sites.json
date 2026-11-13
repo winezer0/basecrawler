@@ -1,0 +1,10 @@
+[
+  {"host": "astro.build", "framework": "Astro", "note": "静态站 + islands，关注 importmap 与预加载"},
+  {"host": "qwik.dev", "framework": "Qwik", "note": "resumability，关注 qwikloader 的 chunk 清单"},
+  {"host": "angular.dev", "framework": "Angular", "note": "Angular CLI 构建产物，验证通用规则是否真兜住"},
+  {"host": "kit.svelte.dev", "framework": "SvelteKit", "note": "关注 __data.json 与 SSR 数据里的 API 路径"},
+  {"host": "remix.run", "framework": "Remix", "note": "关注 __remixContext 内联数据"},
+  {"host": "docs.solidjs.com", "framework": "SolidStart", "note": "Solid 生态，关注 hydration 形态"},
+  {"host": "turbo.build", "framework": "Turbopack/Turborepo", "note": "关注构建产物命名与 manifest"},
+  {"host": "nuxt.com", "framework": "Nuxt", "note": "对照组：已知 __NUXT_DATA__ 覆盖"}
+]

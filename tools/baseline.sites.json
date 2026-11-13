@@ -1,0 +1,63 @@
+{
+  "_readme": "基线站点清单与固定采集口径。供 drift.py（对拍）与 rebaseline.py（重采）共用，避免两处各写一套开关。默认行为在 2026-11-11 之后大幅变化（探测/testfill/safety 默认开、-s 白名单），所以对拍必须显式关掉全部主动能力并用 -s all，否则差集全是口径变化而非代码回退。本文件只是配置，不会触发任何网络请求；只有显式 --run 才会采集。",
+  "flags": [
+    "-d", "2",
+    "--max-urls", "300",
+    "--rl", "5",
+    "-c", "5",
+    "--timeout", "15",
+    "-O", "json",
+    "-s", "all",
+    "--silent",
+    "--no-fuzz",
+    "--no-probe-openapi",
+    "--no-route-expand",
+    "--no-deobf",
+    "--no-route-exec",
+    "--no-deobf-exec",
+    "--no-robots-disallow",
+    "--no-testfill"
+  ],
+  "sites": [
+    {
+      "host": "vite.dev",
+      "url": "https://vite.dev/",
+      "quota": 300,
+      "framework": "Vite",
+      "note": "ESM chunk 恢复与噪音控制",
+      "baseline": "tools/baseline/vite.dev-2026-11-06/urls-assetcrawler.txt"
+    },
+    {
+      "host": "nuxt.com",
+      "url": "https://nuxt.com/",
+      "quota": 300,
+      "framework": "Nuxt",
+      "note": "__NUXT_DATA__ 内联 hydration 数据",
+      "baseline": "tools/baseline/nuxt.com-2026-11-10/urls-assetcrawler.txt"
+    },
+    {
+      "host": "developer.mozilla.org",
+      "url": "https://developer.mozilla.org/",
+      "quota": 300,
+      "framework": "MDN",
+      "note": "大站、多子域、配额饱和下的子域轮换",
+      "baseline": "tools/baseline/developer.mozilla.org-2026-11-10/urls-assetcrawler.txt"
+    },
+    {
+      "host": "petstore3.swagger.io",
+      "url": "https://petstore3.swagger.io/",
+      "quota": 300,
+      "framework": "OpenAPI",
+      "note": "spec 探测与接口形状提取",
+      "baseline": "tools/baseline/petstore3.swagger.io-2026-11-10/urls-assetcrawler.txt"
+    },
+    {
+      "host": "remix.run",
+      "url": "https://remix.run/",
+      "quota": 300,
+      "framework": "Remix",
+      "note": "__remixContext 与 RSC flight 提取",
+      "baseline": "tools/baseline/remix.run-2026-11-10/urls-assetcrawler.txt"
+    }
+  ]
+}

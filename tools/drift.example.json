@@ -1,0 +1,7 @@
+{
+  "_readme": "drift.py 的 spec 模板。sites 与固定采集口径从 baseline.sites.json 读取，避免两处各写一套开关；old_bin / new_bin / proxy 按本地环境修改。离线裁定已有样本时不加 --run；加 --run 才会跑旧1/新1/旧2/新2 四次采集。基线路径相对仓库根目录。",
+  "old_bin": "tools/bin/assetcrawler.exe",
+  "new_bin": "./assetcrawler.exe",
+  "proxy": "http://127.0.0.1:10808",
+  "sites_file": "tools/baseline.sites.json"
+}

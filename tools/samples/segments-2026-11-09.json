@@ -1,0 +1,98 @@
+{
+  "threshold": 0.05,
+  "sites": [
+    {
+      "name": "reqres",
+      "url": "https://reqres.in/",
+      "auto": 160,
+      "regex": 164,
+      "missed": [
+        "https://a.nel.cloudflare.com/report/v4?s=5izglUt5rLqf3y7bC7lRh8LaXY5atvefB5ilpXjD%2FJyklTLOXoQ8VVGmyTrO5w69PEphzmCTv%2F1TPx6flMHgyFbMHV%2BtpqrNtPt3R0Xb8dDFnnK6ch%2FIrOPEpYMeino%3D",
+        "https://a.nel.cloudflare.com/report/v4?s=BEzEoQs8PP6juEqrg4lHQtfeJekTLOQr0xjFM4sQvY6B4T%2FpClKpG4c%2FxGGNshF80gcUhUVNcoXzCGm0RzoCR3N9dyE8PA3UpACv4bxXrO0CtYeaDLHvJYdDAOLWd%2BU%3D",
+        "https://a.nel.cloudflare.com/report/v4?s=Gcf2vlDjVEJUC4YDgXb7EHausx0KZmDIiYiYEsn9WJELSO%2BZZvMQ5fZwa8%2Bttlg1iVMxSmCSO5l2oSeHGzySeJixMM4fv4Pi3cu8rbzkvw9%2Fw6ta7StUeeY%2BatZEX%2FxZ",
+        "https://a.nel.cloudflare.com/report/v4?s=LirTVFok5HA7ZksapwKK8aESXnx7VlfzABfNMFWKLfvvpkc2XBhLWvwu9AgrwgTEdLQNu%2BlObhc%2FPqxvxNd9rD36y59%2FYlFlnJyTBw8abAECozsrtFNY9iDJck0sZDY%3D",
+        "https://a.nel.cloudflare.com/report/v4?s=NrSHMDnjNmOMsQ3wh9W%2Bt5788wukiz679eRT0fqF0EPSqDfGRR7FKrUQO1D6XVtcUEDRH1TwnFlfhdg7Lsd0mu%2BmRzklCVtyR3hQSRqF%2BtC2%2B5%2FJ5GXrGLyORMw%2ByR0%3D",
+        "https://a.nel.cloudflare.com/report/v4?s=iFFy8ImPlxqEUnFd79ABxS0E5XeqbMZ90B7TrG9wyRVYR8G42B%2BpK1Q5LdpddaHHBiAMTkMVquxISgpIluyuPgPjxBP12LSMF3idtUd3AEgK0LIfWmMRgNryyVLo8Ec%3D",
+        "https://reqres.in/application/json"
+      ],
+      "missed_live": 0,
+      "missed_dead": 7
+    },
+    {
+      "name": "gh-rest-docs",
+      "url": "https://docs.github.com/en/rest/repos/repos",
+      "auto": 470,
+      "regex": 454,
+      "missed": [],
+      "missed_live": 0,
+      "missed_dead": 0
+    },
+    {
+      "name": "jsonplaceholder",
+      "url": "https://jsonplaceholder.typicode.com/",
+      "auto": 42,
+      "regex": 42,
+      "missed": [
+        "https://a.nel.cloudflare.com/report/v4?s=%2BeysaS1Wbmm4FllImp4%2BA2XkLEzCYzQONw8QHJ30Hqj9z6MKY29oAze84NdAeOSRDDCLw7p8rUM%2F8SbTQb9x2A99mpJHJXgkfNT6AeOuD1UHTxcGDtqYY%2FUK6FwH7TkRztQrPzSbUlrU3eAG3JTN",
+        "https://a.nel.cloudflare.com/report/v4?s=AIG1EGa%2B6q%2FmhoyfbZkKPfY4gNof4jT%2B%2FmQRG%2B0XTIH1sJop%2B9kxkjw%2F%2BkRotQXzdglkqhU2OKpblG98lOpFlDybLbwEdPPOFGo4dTmb5C9e94D7OwsVvP2AeXC49n0JRYr7wM35ELjMfSRUh35K",
+        "https://a.nel.cloudflare.com/report/v4?s=C1o5%2F6U8S1t7%2Fco7svmmgWmiGsTib96ffTWAoAn6a%2FYazSPGbUxkBWuJn%2FiMOMzjZzDXY5BVt8k3xcMgH1%2F%2BjVpOT0ZIyzfANmehlpFN%2B9LV7xtIO%2BYBEj5C39bukqfwA5dGO3S4yi%2FD3K0%2FWLs8",
+        "https://a.nel.cloudflare.com/report/v4?s=E8fEoWs9xdUypLYT6JtOfny5H0UgmoWfpiVFRXKV76VC9um4uz7Ghbe124B7iLJRHaXefrt37gVDcFpeQt18QPt5auv1%2F%2BR38iQXyxtWyRnkA6zSL2KyZESiC7nrmil6rtVCsRrX1SjoTG8bETaI",
+        "https://a.nel.cloudflare.com/report/v4?s=I2YdssHrKiwLrX9K0lqSHa68lBDdFcRGgVN0fHv%2FXXgsq5rfnODBiN5DlxUX0nrQOgGo3h5HQmqIkN9TPOpTqQ49jcH8VK7ipJqUOGJx9cF5luFyo0XnhuZjH9O0gddGvFNpqpxxc7rQ0sjyKov%2F",
+        "https://a.nel.cloudflare.com/report/v4?s=LctQQfxTU5%2BDOWwPiNC7v%2B4oaIRwQqu1EDmsPNCrN1jTvSGQTupaMiIJpNGtVKKKP%2BxielmmBvp3u1Y355Qe806pYhDizE0AMbNjtWtulMq1UeztFSRkEP50HO3nsU0KlvaXsx33ouqKrRvwNN2G",
+        "https://a.nel.cloudflare.com/report/v4?s=VYSnWvR9AjZsV7jXwyhO2AvANGhm3ab7Xdy3g4dkzIWzCHleUjyGcS1jsuLjL0shnp1KJ4apjXqHwKIV8J5FvAkHPeKVSalmFwNw4MmPJ%2BWZuASDblXWEmcIW6s%2FQn%2BD8j4k69wV7Kv8njfYCD67",
+        "https://a.nel.cloudflare.com/report/v4?s=Yg7kBTvj88AwIlCyyzRmTkkxfbeKWdD6xOHkNsy9PqJNXshE9Kpx1YBWTGwT8pYkJky82sRxTsjhRLKdS6TTMSWXux%2F9X12T8UduwnJMDw8QYP1Pvfkk3%2BCdojNmpJu3Ye8U8locrK1FS2B8bhYJ",
+        "https://a.nel.cloudflare.com/report/v4?s=b4a7ANYMWsCZgFRpbcqwdv9tq3b2q9F20%2FeMSwGamprhXbhQD4a6mjgEn5cLO20u4FAuQMoXO7BAJWm212eE%2BZ%2B%2FHdSnJW2m6zwCG89FBunJyZ3D1%2ByaQxjjAk1R0l9UHoGCkpcta52bcNeSfgV3",
+        "https://a.nel.cloudflare.com/report/v4?s=gpQhg%2FUoNqdYmWWHld09xs81KPNNxTSNrYiKJgBvQLtvC3v8Mf%2Bug95R2t4eL8l9%2BVERofZpiOl4BVwUqN2z%2FTGrnxhDN%2BT0MLJ9mdc08E3bk3RCsTV1s%2FlJ8lzkdQdi5a3GcuoGs%2FNZHxvsmmeK",
+        "https://a.nel.cloudflare.com/report/v4?s=ljCm5MmR9D9M1Tci2m9FS6s1pnu5eN21zxZQ2M8LHHzeXdFaa7irnZHmfqLiltbGN%2FrC9%2Bk1AUxRNQonG2ZG52aJedwnnnbzmfx2Cu4BOLkYwDpFpqKDOPJvE1ar0kHtOGJ%2FQcCTH4hkS53QZn8t",
+        "https://a.nel.cloudflare.com/report/v4?s=nJr7jPBOVemsm3q5H%2Fc%2B8tnULQCNUaeoIlj4Kj7d%2F%2FS%2FDYwqoiAdbP2dpflXPpbLscS%2Fw9PU%2FDP%2BcGji5xdI85f%2FlmLMIIP3MvP07mAca1908l2oGH3h8mSV2U87yGBWBQw0CAQZ8lq%2BJ%2BsZ9Xfl",
+        "https://a.nel.cloudflare.com/report/v4?s=oKdL1CXwzcmp8kzvqX0NW1vr%2FELO2xTtHlWrAbReFaHGPCdDRzVQw%2BBx0jam71CL1qL1x6LYtq%2FfUVVELqn5xxM9xOFqeVLDEL5aF9a%2FTbTDzn6qedB2p%2F2kXA6wdKpTXW02UqD3E7VAeZ%2F6zWWZ",
+        "https://a.nel.cloudflare.com/report/v4?s=pPgZJ96zaervwQP44XAhrBnoJ0MYKYs59Vh6xPgPk7Bg%2FQwuGsK3UEOog19oU%2BGJHBaSpTrUU5UcETzue6ZIQ2XKYVRmNhT3XwZ%2BaBm7bjuaNSdtt9%2Fspg1v8eyZ1gy0Qu2MS%2BK0gEtlO3CxzKpI",
+        "https://a.nel.cloudflare.com/report/v4?s=yevXf7Y8I41bAq6RWFCfYoz9298dbYjYhH8tbEpAGL7NpBQid3d%2F4zCcaZH%2BAG%2FTeYj%2Bx%2BqTt2uVlEpT8XGxLIE2LCp92CXWDlVnECF8UgDkkxtHyiR1KO8W5lkfOkLzjDgMGA%3D%3D"
+      ],
+      "missed_live": 0,
+      "missed_dead": 15
+    },
+    {
+      "name": "pokeapi",
+      "url": "https://pokeapi.co/",
+      "auto": 130,
+      "regex": 129,
+      "missed": [
+        "https://a.nel.cloudflare.com/report/v4?s=%2B37gqHeVnFDtSBKUS4PT1Z7Wne5i6rIjqAHGpHnl8odxv4Gqg9lkTo%2FEla53r6crgaqfBxXgW%2BP0YUWQuVsVXY3byaVcH%2BEj%2BvU91bNH%2F6wn8nyfphS1HgEwEo1G",
+        "https://a.nel.cloudflare.com/report/v4?s=01q0GhF5HeJ9R371Dlk971YWUnjAKLv1OLHtiPYcfWDQdXHoRek%2BWy5hmAj3vS%2B2glvVnf9PFps0HS%2F3%2FxqX9FrAv6HjACAzaM6Cr09%2FeitOXjaxSGY6ThPtymwu",
+        "https://a.nel.cloudflare.com/report/v4?s=2AWc3ecqRlYq1usSH0%2BWV4yn2o%2BmtINuY5TUfhRXLpFrspt2qzUa4mT10IcDRL3D%2BHVMBBH8qfN%2FGzKnf52Pc4hHo288%2BiKg0Fsy75E%2B0XL2snNb8gxk0GUuEOwR",
+        "https://a.nel.cloudflare.com/report/v4?s=33ogtq%2FpcNbq%2FWbSEPGY2jLI9Vcepaw6g2M89Wee%2BOjqxtTDpRs142u4qNlItH%2FK1XqiqV4p7W%2BiyIbUWMbCHrTSx1kBSs%2BpgYjOYVPz6409vLy1qXvFXV4sY0%2F%2B",
+        "https://a.nel.cloudflare.com/report/v4?s=A7y6QVlM%2B%2BE7kBaDx8P0yrZJYzLu8Fl9fsCVxYcAzHGhSncv%2BE6Iv8NFtxUU6qnJwrZ5GAnNvCYpJ0%2BWgmtzv1mDTszsOmZkHKwAJ7HQrgMRF2ls8UwCgnMkKGQ4",
+        "https://a.nel.cloudflare.com/report/v4?s=F%2BTv2VCO79he7i%2FKV3TshRZT5Iz8UTaqX3V%2BKxTm3dwhVgPyKZmwfXf9erggWGDUjD%2F6L6GTlRuYbzDD0lz28ivmARkUeMFd8WcIPh8yzs4pCymc%2B03p8GiAZFkR",
+        "https://a.nel.cloudflare.com/report/v4?s=UwSrZLYtpy2BZZH7aBqfej50X7%2F2w6SnaP4mmILoSQkRnDh7P1xHaEL3hsa64GQG2F7PV40wb%2FcESOiMBGtKE0rzbKwWDHGgX2hy%2FU2RZBPT%2BNeWreP8pGT0lxeL",
+        "https://a.nel.cloudflare.com/report/v4?s=i%2BiCZKgFRJ0CGvXmYUcJovYtm5Qqaufds2ZX79SKAdOkSt5jhS64Krb1%2BA77oWXaff1YK1WPxhwN6sLlhrc2ogm%2F7zMEoMPUW331rRXsAguQUeH4L%2B4W%2BbMvD9uX",
+        "https://a.nel.cloudflare.com/report/v4?s=kpMBt7%2FvzK5CPyFdbZ0L7TAA2aQFwlqlk%2BICVy%2FWDADAKVkwf%2BNt2nrdYsVi5GU3WQXWWsGKY6nzdx8WcLMrzlJDj420eT5elq5c09U3YXiKue0ZTEFzhD4phTiU",
+        "https://a.nel.cloudflare.com/report/v4?s=u2JSGkjOflx4DmDrcAV4rEgO48dVKCdkivo0rrn6PNEAeBj2rwVxP5g%2F0uIa1EJpza%2FZf7%2B3cTEaVwkRk6x%2B1tcqJxpwkgaSPcs0XtXSayXFfxqwWJB5RFPXb4oZ",
+        "https://a.nel.cloudflare.com/report/v4?s=yBd7LavpVW59MQpOConTss%2FoP8X6soE%2BIxMhpl9E2H9Dwy3KRbUJHFT84idwU0bl9MIwegQtOf40rmTFUA2PlEePKcZJYtKcXPECouu0PowaPvUQLPo18cuOO%2FzI",
+        "https://pokeapi.co/api/v2/",
+        "https://pokeapi.co/templates/index.d.ts"
+      ],
+      "missed_live": 1,
+      "missed_dead": 12
+    },
+    {
+      "name": "openlibrary",
+      "url": "https://openlibrary.org/",
+      "auto": 0,
+      "regex": 0,
+      "missed": [],
+      "missed_live": 0,
+      "missed_dead": 0,
+      "error": "TimeoutExpired: Command '['./assetcrawler.exe', '-u', 'https://openlibrary.org/', '-d', '2', '-max-urls', '120', '-c', '3', '-timeout', '15', '-js-engine', 'auto', '-jsonl', '-o', 'C:\\\\Users\\\\windows\\\\AppData\\\\Local\\\\Temp\\\\o2\\\\openlibrary-auto.jsonl', '-silent', '-proxy', 'http://127.0.0.1:10808']' timed out after 600 seconds"
+    },
+    {
+      "name": "httpbin",
+      "url": "https://httpbin.org/",
+      "auto": 63,
+      "regex": 49,
+      "missed": [],
+      "missed_live": 0,
+      "missed_dead": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{"url":"https://petstore.swagger.io/","method":"GET","source":"seed","depth":0,"status":200,"content_type":"text/html"}
+{"url":"https://petstore.swagger.io/favicon-32x32.png","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"image/png","referer":"https://petstore.swagger.io/"}
+{"url":"https://petstore.swagger.io/index.css","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"text/css","referer":"https://petstore.swagger.io/"}
+{"url":"https://petstore.swagger.io/swagger-ui.css","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"text/css","referer":"https://petstore.swagger.io/"}
+{"url":"https://petstore.swagger.io/favicon-16x16.png","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"image/png","referer":"https://petstore.swagger.io/"}
+{"url":"https://petstore.swagger.io/swagger-ui-standalone-preset.js","method":"GET","source":"script","attribute":"src","tag":"script","depth":1,"status":200,"content_type":"application/javascript","referer":"https://petstore.swagger.io/"}
+{"url":"https://petstore.swagger.io/swagger-ui-bundle.js","method":"GET","source":"script","attribute":"src","tag":"script","depth":1,"status":200,"content_type":"application/javascript","referer":"https://petstore.swagger.io/"}
+{"url":"https://petstore.swagger.io/swagger-initializer.js","method":"GET","source":"script","attribute":"src","tag":"script","depth":1,"status":200,"content_type":"application/javascript","referer":"https://petstore.swagger.io/"}

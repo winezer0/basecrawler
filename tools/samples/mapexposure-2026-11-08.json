@@ -1,0 +1,1399 @@
+[
+  {
+    "domain": "twitter.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "apple.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "w2rt6byl5nf1opmc-a.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "googletagmanager.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 404: Not Found"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "microsoft.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://microsoft.com/msonecloudapi/assets/reimaginesharedhead.js: URLError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "github.com",
+    "ok": true,
+    "js_seen": 5,
+    "map_ref": 2,
+    "map_inline": 0,
+    "map_reachable": 2,
+    "errors": [
+      "js https://github.githubassets.com/assets/high-contrast-cookie-19546c435025711b.js: HTTPError",
+      "js https://github.githubassets.com/assets/marketing-essentials-ce503875e779ce74.js: HTTPError",
+      "js https://github.githubassets.com/assets/global-banner-disable-92a64558879ee38b.js: HTTPError"
+    ],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://github.githubassets.com/assets/core-12440d6f580b521b.js",
+        "map": "https://github.githubassets.com/assets/core-12440d6f580b521b-5899f3c1de7c0c24.js.map",
+        "reachable": true
+      },
+      {
+        "kind": "file",
+        "js": "https://github.githubassets.com/assets/landing-pages-3148faac3ed671ff.js",
+        "map": "https://github.githubassets.com/assets/landing-pages-3148faac3ed671ff-76d8a8b8e57e788e.js.map",
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "domain": "wikipedia.org",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "play.google.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "apps.apple.com",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "youtu.be",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 2,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://www.youtube.com/s/desktop/4e57be2c/jsbin/web-animations-next-lite.min.vflset/web-animations-next-lite.min.js",
+        "map": "https://www.youtube.com/s/desktop/4e57be2c/jsbin/web-animations-next-lite.min.vflset/web-animations-next-lite.min.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://www.youtube.com/s/desktop/4e57be2c/jsbin/webcomponents-all-noPatch.vflset/webcomponents-all-noPatch.js",
+        "map": "https://www.youtube.com/s/desktop/4e57be2c/jsbin/webcomponents-all-noPatch.vflset/webcomponents-all-noPatch.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      }
+    ]
+  },
+  {
+    "domain": "x.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "wordpress.org",
+    "ok": true,
+    "js_seen": 5,
+    "map_ref": 1,
+    "map_inline": 0,
+    "map_reachable": 1,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://wordpress.org/wp-content/plugins/gutenberg/build/modules/block-library/navigation/view.min.js?ver=5381c0a3642be76565c7-20240308",
+        "map": "https://wordpress.org/wp-content/plugins/gutenberg/build/modules/block-library/navigation/view.min.js.map",
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "domain": "goo.gl",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 400: Bad Request"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "wa.me",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "en.wikipedia.org",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "maps.google.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "pinterest.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://s.pinimg.com/webapp/7412-7106a93336d35b94.js: HTTPError",
+      "js https://s.pinimg.com/webapp/locale-en_US-LocaleDataLoader-f7417dafb980a660.js: HTTPError",
+      "js https://s.pinimg.com/webapp/10345-d32444e8180d9cfd.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "tiktok.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "docs.google.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "whatsapp.com",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "policies.google.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "vimeo.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://f.vimeocdn.com/cms/_next/static/chunks/main-app-5121283d51936c72.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "nginx.org",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "f5.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "nginx.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "amazon.com",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "maps.app.goo.gl",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 400: Bad Request"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "api.whatsapp.com",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "t.me",
+    "ok": true,
+    "js_seen": 3,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "drive.google.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "mozilla.org",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://www.mozilla.org/media/js/site.c6d6f1fa36a4.js: HTTPError",
+      "js https://www.mozilla.org/media/js/site-ie.419ec4b57d17.js: HTTPError",
+      "js https://www.mozilla.org/media/js/ie/libs/html5shiv.d8165cb50ec8.js: HTTPError",
+      "js https://www.mozilla.org/media/js/gtm-snippet.cc9550e6b401.js: HTTPError",
+      "js https://www.mozilla.org/media/js/sentry.d1770d77b071.js: HTTPError",
+      "js https://www.mozilla.org/media/js/lib.57070d33021c.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "europa.eu",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "support.google.com",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "adobe.com",
+    "ok": true,
+    "js_seen": 2,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "wordpress.com",
+    "ok": true,
+    "js_seen": 4,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "bit.ly",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "blogspot.com",
+    "ok": true,
+    "js_seen": 2,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js: HTTPError",
+      "js https://blogspot.com/js/main.min.js?v=1476060773: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "player.vimeo.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://f.vimeocdn.com/cms/_next/static/chunks/main-app-5121283d51936c72.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "apache.org",
+    "ok": true,
+    "js_seen": 5,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://www.apachecon.com/event-images/snippet.js: HTTPError",
+      "js https://apache.org/js/bootstrap.js: HTTPError",
+      "js https://apache.org/js/slideshow.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "github.io",
+    "ok": true,
+    "js_seen": 2,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://github.io/js/jquery.js: HTTPError",
+      "js https://github.io/js/application.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "plus.google.com",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "support.microsoft.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 4,
+    "map_inline": 0,
+    "map_reachable": 4,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://support.microsoft.com/lib/bootstrap/dist/js/bootstrap.bundle.min.js?v=5P1JGBOIxI7FBAvT_mb1fCnI5n_NhQKzNUuW7Hq0fMc",
+        "map": "https://support.microsoft.com/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+        "reachable": true
+      },
+      {
+        "kind": "file",
+        "js": "https://support.microsoft.com/lib/oneds/dist/ms.analytics-web-4.0.2.min.js?v=O7wAAOKAVN2-OLLnoh3KjWb9pW6khEi85GWLxrUYqXA",
+        "map": "https://support.microsoft.com/lib/oneds/dist/ms.analytics-web-4.0.2.min.js.map",
+        "reachable": true
+      },
+      {
+        "kind": "file",
+        "js": "https://support.microsoft.com/js/SilentSignInManager.Main.min.js?v=YhJIc9eIReDAmfom1ivxwN61e3gQDko8Dw4oru_ZXi4",
+        "map": "https://support.microsoft.com/js/SilentSignInManager.Main.min.js.map",
+        "reachable": true
+      },
+      {
+        "kind": "file",
+        "js": "https://support.microsoft.com/js/MeControlCallout.Main.min.js?v=tLNC8gJXmcpgKnVZCzJOdJOwkDcmcgvOTKeTIHyDJVw",
+        "map": "https://support.microsoft.com/js/MeControlCallout.Main.min.js.map",
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "domain": "nih.gov",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 403: Forbidden"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "reddit.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "forms.gle",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 400: Bad Request"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "spotify.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "yahoo.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 6,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://yahoo.com/_nca/_next/static/chunks/87c73c54-e492680491e89db9.js?dpl=sha-0b8e71a",
+        "map": "https://yahoo.com/_nca/_next/static/chunks/87c73c54-e492680491e89db9.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://yahoo.com/_nca/_next/static/chunks/7730-b83d5a1bcbd1be77.js?dpl=sha-0b8e71a",
+        "map": "https://yahoo.com/_nca/_next/static/chunks/7730-b83d5a1bcbd1be77.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://yahoo.com/_nca/_next/static/chunks/main-app-6c54babe6450d742.js?dpl=sha-0b8e71a",
+        "map": "https://yahoo.com/_nca/_next/static/chunks/main-app-6c54babe6450d742.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://yahoo.com/_nca/_next/static/chunks/45456-f31466986504c9be.js?dpl=sha-0b8e71a",
+        "map": "https://yahoo.com/_nca/_next/static/chunks/45456-f31466986504c9be.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://yahoo.com/_nca/_next/static/chunks/app/global-error-0293507a87b929ff.js?dpl=sha-0b8e71a",
+        "map": "https://yahoo.com/_nca/_next/static/chunks/app/global-error-0293507a87b929ff.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://yahoo.com/_nca/_next/static/chunks/69370-6a7d869b8a48bc20.js?dpl=sha-0b8e71a",
+        "map": "https://yahoo.com/_nca/_next/static/chunks/69370-6a7d869b8a48bc20.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      }
+    ]
+  },
+  {
+    "domain": "qq.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 1,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/20240515201444/core3-37-1.min.js",
+        "map": "https://mat1.gtimg.com/qqcdn/qqindex2021/common-static/20240515201444/minified.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      }
+    ]
+  },
+  {
+    "domain": "itunes.apple.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://itunes.apple.com/v/itunes/home/l/built/scripts/head.built.js: HTTPError",
+      "js https://itunes.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.umd.js: HTTPError",
+      "js https://itunes.apple.com/metrics/ac-analytics/2.30.0/scripts/ac-analytics.js: HTTPError",
+      "js https://itunes.apple.com/metrics/ac-analytics/2.30.0/scripts/auto-init.js: HTTPError",
+      "js https://itunes.apple.com/metrics/data-relay/1.2.0/scripts/data-relay.js: HTTPError",
+      "js https://itunes.apple.com/metrics/data-relay/1.2.0/scripts/auto-relay.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "httpd.apache.org",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://www.apachecon.com/event-images/snippet.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "open.spotify.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "creativecommons.org",
+    "ok": true,
+    "js_seen": 2,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "ec.europa.eu",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "tumblr.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "archive.org",
+    "ok": true,
+    "js_seen": 3,
+    "map_ref": 1,
+    "map_inline": 0,
+    "map_reachable": 1,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://archive.org/offshoot_assets/vendor/lit/polyfill-support.js",
+        "map": "https://archive.org/offshoot_assets/vendor/lit/polyfill-support.js.map",
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "domain": "gravatar.com",
+    "ok": true,
+    "js_seen": 4,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "macromedia.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error _ssl.c:1015: The handshake operation timed out>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "amazonaws.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 2,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://a0.awsstatic.com/eb-csr/2.0.19/polyfills/es-module-shims/es-module-shims.js",
+        "map": "https://a0.awsstatic.com/eb-csr/2.0.19/polyfills/es-module-shims/'",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://a0.awsstatic.com/eb-csr/2.0.19/orchestrate.js",
+        "map": "https://a0.awsstatic.com/eb-csr/2.0.19/orchestrate.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      }
+    ]
+  },
+  {
+    "domain": "sites.google.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "w3.org",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "office.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "doi.org",
+    "ok": true,
+    "js_seen": 3,
+    "map_ref": 1,
+    "map_inline": 0,
+    "map_reachable": 1,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
+        "map": "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js.map",
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "domain": "flickr.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "nytimes.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "baidu.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "support.mozilla.org",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "medium.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 403: Forbidden"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "youtube-nocookie.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'youtube-nocookie.com'. (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "godaddy.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 403: Forbidden"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "accounts.google.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "namecheap.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 403: Forbidden"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "soundcloud.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 4,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://a-v2.sndcdn.com/assets/59-ac0a49ce.js",
+        "map": "http://ent/web-sourcemaps/59-ac0a49ce.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://a-v2.sndcdn.com/assets/57-9dd8e5ef.js",
+        "map": "http://ent/web-sourcemaps/57-9dd8e5ef.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://a-v2.sndcdn.com/assets/18-2ab69eb1.js",
+        "map": "http://ent/web-sourcemaps/18-2ab69eb1.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://a-v2.sndcdn.com/assets/58-c6d3395c.js",
+        "map": "http://ent/web-sourcemaps/58-c6d3395c.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      }
+    ]
+  },
+  {
+    "domain": "web.archive.org",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 4,
+    "map_inline": 0,
+    "map_reachable": 4,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://archive.org/components/npm/lit/polyfill-support.js?v=7283f1a0",
+        "map": "https://archive.org/components/npm/lit/polyfill-support.js.map",
+        "reachable": true
+      },
+      {
+        "kind": "file",
+        "js": "https://archive.org/components/npm/@webcomponents/webcomponentsjs/webcomponents-bundle.js?v=7283f1a0",
+        "map": "https://archive.org/components/npm/@webcomponents/webcomponentsjs/webcomponents-bundle.js.map",
+        "reachable": true
+      },
+      {
+        "kind": "file",
+        "js": "https://archive.org/includes/build/js/ia-topnav.min.js?v=7283f1a0",
+        "map": "https://archive.org/includes/build/js/ia-topnav.min.js.map",
+        "reachable": true
+      },
+      {
+        "kind": "file",
+        "js": "https://archive.org/includes/build/js/archive.min.js?v=7283f1a0",
+        "map": "https://archive.org/includes/build/js/archive.min.js.map",
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "domain": "forbes.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 403: Forbidden"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "sciencedirect.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 403: Forbidden"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "ailawandorder.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'ailawandorder.com'. (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "live.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 417: Expectation Failed"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "theguardian.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "zoom.us",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 1,
+    "map_inline": 0,
+    "map_reachable": 1,
+    "errors": [
+      "js https://cdn.optimizely.com/js/6395285578973184.js: URLError"
+    ],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://cdn.bc0a.com/autopilot/f00000000314502/autopilot_sdk.js",
+        "map": "https://cdn.bc0a.com/autopilot/f00000000314502/autopilot_sdk.js.map",
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "domain": "googleblog.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "www.ncbi.nlm.nih.gov",
+    "ok": true,
+    "js_seen": 4,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://script.crazyegg.com/pages/scripts/0027/2050.js: HTTPError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "sourceforge.net",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://a.fsdn.com/con/js/asg_embed.js?1793989993: URLError"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "paypal.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 2,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "js https://www.paypalobjects.com/webcaptcha/ngrlCaptcha.min.js: HTTPError",
+      "js https://www.paypalobjects.com/martech/tm/paypal/gtm-bootstrap.js: HTTPError"
+    ],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://www.paypalobjects.com/ppcmsnodeweb/pp-com-components-pds60/pp-com-components-pds60-Bxi9GaB7.js",
+        "map": "https://www.paypalobjects.com/ppcmsnodeweb/pp-com-components-pds60/pp-com-components-pds60-Bxi9GaB7.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://www.paypalobjects.com/ppcmsnodeweb/pp-com-components-pds60/datadog-DNPX-sGw.js",
+        "map": "https://www.paypalobjects.com/ppcmsnodeweb/pp-com-components-pds60/datadog-DNPX-sGw.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      }
+    ]
+  },
+  {
+    "domain": "who.int",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 2,
+    "map_inline": 0,
+    "map_reachable": 2,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://kendo.cdn.telerik.com/2021.1.119/js/kendo.all.min.js",
+        "map": "https://kendo.cdn.telerik.com/2021.1.119/js/kendo.all.min.js.map",
+        "reachable": true
+      },
+      {
+        "kind": "file",
+        "js": "https://kendo.cdn.telerik.com/2021.1.119/js/kendo.timezones.min.js",
+        "map": "https://kendo.cdn.telerik.com/2021.1.119/js/kendo.timezones.min.js.map",
+        "reachable": true
+      }
+    ]
+  },
+  {
+    "domain": "cpanel.net",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "shopify.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "oracle.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: HTTP Error 403: Forbidden"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "wixsite.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "opera.com",
+    "ok": true,
+    "js_seen": 4,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "dropbox.com",
+    "ok": true,
+    "js_seen": 2,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "wikimedia.org",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "bbc.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "t.co",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "vk.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1032)>"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "discord.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 1,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://discord.com/w/assets/3a756378428a770f27e63b63edc9fd6cc02fda3a/styles.js",
+        "map": "https://discord.com/w/assets/3a756378428a770f27e63b63edc9fd6cc02fda3a/styles.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      }
+    ]
+  },
+  {
+    "domain": "google.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "facebook.com",
+    "ok": false,
+    "js_seen": 0,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [
+      "page: no external js"
+    ],
+    "maps": []
+  },
+  {
+    "domain": "youtube.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 2,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": [
+      {
+        "kind": "file",
+        "js": "https://www.youtube.com/s/desktop/4e57be2c/jsbin/web-animations-next-lite.min.vflset/web-animations-next-lite.min.js",
+        "map": "https://www.youtube.com/s/desktop/4e57be2c/jsbin/web-animations-next-lite.min.vflset/web-animations-next-lite.min.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      },
+      {
+        "kind": "file",
+        "js": "https://www.youtube.com/s/desktop/4e57be2c/jsbin/webcomponents-all-noPatch.vflset/webcomponents-all-noPatch.js",
+        "map": "https://www.youtube.com/s/desktop/4e57be2c/jsbin/webcomponents-all-noPatch.vflset/webcomponents-all-noPatch.js.map",
+        "reachable": false,
+        "error": "HTTPError"
+      }
+    ]
+  },
+  {
+    "domain": "instagram.com",
+    "ok": true,
+    "js_seen": 6,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  },
+  {
+    "domain": "linkedin.com",
+    "ok": true,
+    "js_seen": 1,
+    "map_ref": 0,
+    "map_inline": 0,
+    "map_reachable": 0,
+    "errors": [],
+    "maps": []
+  }
+]

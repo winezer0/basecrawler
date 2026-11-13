@@ -1,0 +1,28 @@
+{
+  "target_host": "petstore3.swagger.io",
+  "generated_at": "",
+  "tools": {
+    "hakrawler": {
+      "status": "no_output"
+    },
+    "gospider": {
+      "status": "no_output"
+    },
+    "cariddi": {
+      "status": "no_output"
+    },
+    "URLFinder-m1": {
+      "status": "no_output"
+    },
+    "URLFinder-m2": {
+      "status": "no_output"
+    },
+    "assetcrawler": {
+      "status": "ok",
+      "inside_unique": 45,
+      "outside_unique": 2,
+      "raw_count": 47
+    }
+  },
+  "union_inside": 45
+}

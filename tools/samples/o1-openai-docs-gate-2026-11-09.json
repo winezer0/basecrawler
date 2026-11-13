@@ -1,0 +1,39 @@
+{
+  "gate": "O-1 OpenAI 文档自动爬虫测试验证",
+  "date": "2026-11-09",
+  "openai_official": {
+    "url": "https://platform.openai.com/docs/api-reference/chat",
+    "result": "403（Cloudflare 机器人防护，换浏览器 UA 仍 403）",
+    "verdict": "静态爬虫不可达，诚实记录为不做"
+  },
+  "equivalent_site": {
+    "url": "https://docs.github.com/en/rest/repos/repos",
+    "result": "200（1.4MB 页面）",
+    "curl_extracted": 33,
+    "get": 17,
+    "post": 5,
+    "sample_endpoints": [
+      "/user/repos",
+      "/repos/OWNER/REPO",
+      "/users/USERNAME/repos",
+      "/repositories"
+    ],
+    "auth_placeholder_kept": 33,
+    "auth_placeholder_added": 12,
+    "send_confirmed": "GET api.github.com → 401（无凭证真实状态）"
+  },
+  "gaps_for_O3": [
+    "全大写占位符（USERNAME/OWNER/REPO/ORG）不填充——GitHub 文档风格",
+    "同种子域资产（favicon/manifest/_next css/llms.txt）混进测试请求",
+    "body 小规则缺（homepage→url 等）",
+    "缺确认结果汇总统计"
+  ],
+  "uppercase_placeholders_seen": [
+    "/ORG",
+    "/OWNER",
+    "/REPO",
+    "/TEMPLATE_OWNER",
+    "/TEMPLATE_REPO",
+    "/USERNAME"
+  ]
+}

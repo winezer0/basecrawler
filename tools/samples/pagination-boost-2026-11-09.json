@@ -1,0 +1,131 @@
+[
+  {
+    "name": "pokeapi",
+    "url": "https://pokeapi.co/api/v2/pokemon?limit=20",
+    "kind": "explicit",
+    "page1_next": {
+      "explicit": [
+        "https://pokeapi.co/api/v2/pokemon?offset=20&limit=20"
+      ]
+    },
+    "chain_pages": 5,
+    "chain_urls": [
+      "https://pokeapi.co/api/v2/pokemon?limit=20",
+      "https://pokeapi.co/api/v2/pokemon?offset=20&limit=20",
+      "https://pokeapi.co/api/v2/pokemon?offset=40&limit=20",
+      "https://pokeapi.co/api/v2/pokemon?offset=60&limit=20",
+      "https://pokeapi.co/api/v2/pokemon?offset=80&limit=20"
+    ],
+    "crawled": 998,
+    "covered": 3,
+    "page2_covered": true,
+    "missed": [
+      "https://pokeapi.co/api/v2/pokemon?offset=60&limit=20",
+      "https://pokeapi.co/api/v2/pokemon?offset=80&limit=20"
+    ]
+  },
+  {
+    "name": "dummyjson",
+    "url": "https://dummyjson.com/products?limit=10&skip=0",
+    "kind": "computed",
+    "page1_next": {
+      "computed": [
+        "https://dummyjson.com/products?limit=10&skip=10"
+      ]
+    },
+    "chain_pages": 5,
+    "chain_urls": [
+      "https://dummyjson.com/products?limit=10&skip=0",
+      "https://dummyjson.com/products?limit=10&skip=10",
+      "https://dummyjson.com/products?limit=10&skip=20",
+      "https://dummyjson.com/products?limit=10&skip=30",
+      "https://dummyjson.com/products?limit=10&skip=40"
+    ],
+    "crawled": 629,
+    "covered": 5,
+    "page2_covered": true,
+    "missed": []
+  },
+  {
+    "name": "huggingface",
+    "url": "https://huggingface.co/api/models?limit=5",
+    "kind": "link-header",
+    "page1_next": {
+      "link-header": [
+        "https://huggingface.co/api/models?limit=5&cursor=eyIkb3IiOlt7InRyZW5kaW5nU2NvcmUiOjM4OCwiX2lkIjp7IiRndCI6IjZhNjFjOGVjYjk4ODZiYTFmNzJhODg0MSJ9fSx7InRyZW5kaW5nU2NvcmUiOnsiJGx0IjozODh9fSx7InRyZW5kaW5nU2NvcmUiOm51bGx9XX0%3D"
+      ]
+    },
+    "chain_pages": 5,
+    "chain_urls": [
+      "https://huggingface.co/api/models?limit=5",
+      "https://huggingface.co/api/models?limit=5&cursor=eyIkb3IiOlt7InRyZW5kaW5nU2NvcmUiOjM4OCwiX2lkIjp7IiRndCI6IjZhNjFjOGVjYjk4ODZiYTFmNzJhODg0MSJ9fSx7InRyZW5kaW5nU2NvcmUiOnsiJGx0IjozODh9fSx7InRyZW5kaW5nU2NvcmUiOm51bGx9XX0%3D",
+      "https://huggingface.co/api/models?limit=5&cursor=eyIkb3IiOlt7InRyZW5kaW5nU2NvcmUiOjI3OSwiX2lkIjp7IiRndCI6IjZhZTY1MDA1ZDJmODdlMmFlNzQ0MzhkYSJ9fSx7InRyZW5kaW5nU2NvcmUiOnsiJGx0IjoyNzl9fSx7InRyZW5kaW5nU2NvcmUiOm51bGx9XX0%3D",
+      "https://huggingface.co/api/models?limit=5&cursor=eyIkb3IiOlt7InRyZW5kaW5nU2NvcmUiOjIyNCwiX2lkIjp7IiRndCI6IjZhOGVkYzJjMjI1ZDIyYzBlZTBmZGFiNiJ9fSx7InRyZW5kaW5nU2NvcmUiOnsiJGx0IjoyMjR9fSx7InRyZW5kaW5nU2NvcmUiOm51bGx9XX0%3D",
+      "https://huggingface.co/api/models?limit=5&cursor=eyIkb3IiOlt7InRyZW5kaW5nU2NvcmUiOjE4Ni41LCJfaWQiOnsiJGd0IjoiNmFkYmQzMmU4YTlmY2QzY2JhNWRiMGZmIn19LHsidHJlbmRpbmdTY29yZSI6eyIkbHQiOjE4Ni41fX0seyJ0cmVuZGluZ1Njb3JlIjpudWxsfV19"
+    ],
+    "crawled": 1001,
+    "covered": 2,
+    "page2_covered": true,
+    "missed": [
+      "https://huggingface.co/api/models?limit=5&cursor=eyIkb3IiOlt7InRyZW5kaW5nU2NvcmUiOjI3OSwiX2lkIjp7IiRndCI6IjZhZTY1MDA1ZDJmODdlMmFlNzQ0MzhkYSJ9fSx7InRyZW5kaW5nU2NvcmUiOnsiJGx0IjoyNzl9fSx7InRyZW5kaW5nU2NvcmUiOm51bGx9XX0%3D",
+      "https://huggingface.co/api/models?limit=5&cursor=eyIkb3IiOlt7InRyZW5kaW5nU2NvcmUiOjIyNCwiX2lkIjp7IiRndCI6IjZhOGVkYzJjMjI1ZDIyYzBlZTBmZGFiNiJ9fSx7InRyZW5kaW5nU2NvcmUiOnsiJGx0IjoyMjR9fSx7InRyZW5kaW5nU2NvcmUiOm51bGx9XX0%3D",
+      "https://huggingface.co/api/models?limit=5&cursor=eyIkb3IiOlt7InRyZW5kaW5nU2NvcmUiOjE4Ni41LCJfaWQiOnsiJGd0IjoiNmFkYmQzMmU4YTlmY2QzY2JhNWRiMGZmIn19LHsidHJlbmRpbmdTY29yZSI6eyIkbHQiOjE4Ni41fX0seyJ0cmVuZGluZ1Njb3JlIjpudWxsfV19"
+    ]
+  },
+  {
+    "name": "hn-algolia",
+    "url": "https://hn.algolia.com/api/v1/search?query=golang&page=0",
+    "kind": "computed",
+    "page1_next": {
+      "computed": [
+        "https://hn.algolia.com/api/v1/search?query=golang&page=1"
+      ]
+    },
+    "chain_pages": 5,
+    "chain_urls": [
+      "https://hn.algolia.com/api/v1/search?query=golang&page=0",
+      "https://hn.algolia.com/api/v1/search?query=golang&page=1",
+      "https://hn.algolia.com/api/v1/search?query=golang&page=2",
+      "https://hn.algolia.com/api/v1/search?query=golang&page=3",
+      "https://hn.algolia.com/api/v1/search?query=golang&page=4"
+    ],
+    "crawled": 6,
+    "covered": 5,
+    "page2_covered": true,
+    "missed": []
+  },
+  {
+    "name": "stackexchange",
+    "url": "https://api.stackexchange.com/2.3/tags?site=stackoverflow&pagesize=10&page=1",
+    "kind": "computed",
+    "page1_next": {
+      "computed": [
+        "https://api.stackexchange.com/2.3/tags?site=stackoverflow&pagesize=10&page=2"
+      ]
+    },
+    "chain_pages": 5,
+    "chain_urls": [
+      "https://api.stackexchange.com/2.3/tags?site=stackoverflow&pagesize=10&page=1",
+      "https://api.stackexchange.com/2.3/tags?site=stackoverflow&pagesize=10&page=2",
+      "https://api.stackexchange.com/2.3/tags?site=stackoverflow&pagesize=10&page=3",
+      "https://api.stackexchange.com/2.3/tags?site=stackoverflow&pagesize=10&page=4",
+      "https://api.stackexchange.com/2.3/tags?site=stackoverflow&pagesize=10&page=5"
+    ],
+    "crawled": 9,
+    "covered": 5,
+    "page2_covered": true,
+    "missed": []
+  },
+  {
+    "name": "wikipedia",
+    "url": "https://en.wikipedia.org/w/api.php?action=query&list=allpages&aplimit=5&format=json",
+    "kind": "none",
+    "error": "RemoteDisconnected: Remote end closed connection without response",
+    "chain_pages": 0,
+    "covered": 0,
+    "missed": [],
+    "crawled": 0,
+    "chain_urls": [],
+    "page1_next": {}
+  }
+]

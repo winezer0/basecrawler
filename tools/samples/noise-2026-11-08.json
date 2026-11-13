@@ -1,0 +1,167 @@
+{
+  "threshold": 0.1,
+  "sites": [
+    {
+      "rows": 405,
+      "fetched": 296,
+      "pending": 109,
+      "s4xx": 0,
+      "s404": 0,
+      "noise_rate": 0.0,
+      "n4xx_sources": [],
+      "n4xx_ext_groups": [],
+      "host": "astro.build"
+    },
+    {
+      "rows": 467,
+      "fetched": 296,
+      "pending": 171,
+      "s4xx": 16,
+      "s404": 16,
+      "noise_rate": 0.05405405405405406,
+      "n4xx_sources": [
+        [
+          "js-ast",
+          12
+        ],
+        [
+          "img",
+          4
+        ]
+      ],
+      "n4xx_ext_groups": [
+        [
+          "none",
+          7
+        ],
+        [
+          "asset",
+          6
+        ],
+        [
+          "source",
+          3
+        ]
+      ],
+      "host": "qwik.dev"
+    },
+    {
+      "rows": 299,
+      "fetched": 296,
+      "pending": 3,
+      "s4xx": 1,
+      "s404": 0,
+      "noise_rate": 0.0033783783783783786,
+      "n4xx_sources": [
+        [
+          "a",
+          1
+        ]
+      ],
+      "n4xx_ext_groups": [
+        [
+          "none",
+          1
+        ]
+      ],
+      "host": "angular.dev"
+    },
+    {
+      "rows": 405,
+      "fetched": 296,
+      "pending": 109,
+      "s4xx": 0,
+      "s404": 0,
+      "noise_rate": 0.0,
+      "n4xx_sources": [],
+      "n4xx_ext_groups": [],
+      "host": "kit.svelte.dev"
+    },
+    {
+      "rows": 406,
+      "fetched": 296,
+      "pending": 110,
+      "s4xx": 119,
+      "s404": 118,
+      "noise_rate": 0.40202702702702703,
+      "n4xx_sources": [
+        [
+          "js-ast",
+          119
+        ]
+      ],
+      "n4xx_ext_groups": [
+        [
+          "asset",
+          76
+        ],
+        [
+          "source",
+          33
+        ],
+        [
+          "none",
+          8
+        ]
+      ],
+      "host": "remix.run"
+    },
+    {
+      "rows": 581,
+      "fetched": 296,
+      "pending": 285,
+      "s4xx": 1,
+      "s404": 1,
+      "noise_rate": 0.0033783783783783786,
+      "n4xx_sources": [
+        [
+          "img",
+          1
+        ]
+      ],
+      "n4xx_ext_groups": [
+        [
+          "asset",
+          1
+        ]
+      ],
+      "host": "docs.solidjs.com"
+    },
+    {
+      "rows": 658,
+      "fetched": 297,
+      "pending": 361,
+      "s4xx": 10,
+      "s404": 9,
+      "noise_rate": 0.03367003367003367,
+      "n4xx_sources": [
+        [
+          "js-ast",
+          8
+        ],
+        [
+          "img",
+          2
+        ]
+      ],
+      "n4xx_ext_groups": [
+        [
+          "none",
+          10
+        ]
+      ],
+      "host": "nuxt.com"
+    },
+    {
+      "rows": 1,
+      "fetched": 1,
+      "pending": 0,
+      "s4xx": 0,
+      "s404": 0,
+      "noise_rate": 0.0,
+      "n4xx_sources": [],
+      "n4xx_ext_groups": [],
+      "host": "turbo.build"
+    }
+  ]
+}

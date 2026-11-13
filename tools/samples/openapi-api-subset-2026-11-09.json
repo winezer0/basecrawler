@@ -1,0 +1,85 @@
+{
+  "sites": [
+    {
+      "domain": "petstore.swagger.io",
+      "exposed": true,
+      "spec_url": "https://petstore.swagger.io/v2/swagger.json",
+      "version": "2.0",
+      "paths": 14,
+      "operations": 20,
+      "error": ""
+    },
+    {
+      "domain": "api.stripe.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "gitlab.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.github.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.slack.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.notion.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "httpbin.org",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "api.cloudflare.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": ""
+    },
+    {
+      "domain": "reddit.com",
+      "exposed": false,
+      "spec_url": "",
+      "version": "",
+      "paths": 0,
+      "operations": 0,
+      "error": "bad json: Expecting value: line 2 column 3 (char 3)"
+    }
+  ]
+}

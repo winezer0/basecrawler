@@ -1,0 +1,34 @@
+{
+  "gate": "Q-4 OpenAPI opt-in 探测",
+  "date": "2026-11-09",
+  "verdict": "实施（opt-in，默认关闭）",
+  "rationale": "P-1 的 2.4% 总体暴露率是「默认开启」的否决依据，不是「能力不该存在」的依据——petstore 单站 14 个操作是契约级资源（路径+方法+参数名），精确度远高于从 HTML/JS 猜路径",
+  "change": {
+    "extractor": "openapi.go：LooksLikeOpenAPI（版本键+非空 paths）、FromOpenAPI（paths×方法，参数名去重保序，basePath/servers 仅在路径非绝对时补前缀）、pathTemplate（{param}→:param，避免 URL 编码成 %7B）、OpenAPIProbePaths（14 路径，含 P-1 补入的 Swagger 2.0 变体）",
+    "crawler": "Options.ProbeOpenAPI；bootstrap 对每个 origin 试 14 个候选路径（source=openapi-probe, depth 0）；响应判定用内容而非路径；产出 Confidence=template（emit-only）",
+    "cli": "-probe-openapi（默认 false）"
+  },
+  "e2e": {
+    "petstore": {
+      "on": {
+        "openapi_ops": 14,
+        "total": 32
+      },
+      "off": {
+        "openapi_ops": 0,
+        "total": 8
+      }
+    },
+    "sample_ops": [
+      "GET /pet/findByStatus params=[status]",
+      "DELETE /pet/:petId params=[api_key, petId]",
+      "POST /pet/:petId/uploadImage params=[petId, additionalMetadata, file]"
+    ],
+    "note": "14/14 与 petstore spec 的 path×method 完全一致"
+  },
+  "fixes_found_during_e2e": [
+    "初版 GET 操作被当可抓取候选入队（只出 9 条非 GET）→ 全部改为 Confidence=template emit-only",
+    "{petId} 被 url.Parse/String 编码成 %7BpetId%7D → pathTemplate 转 :param",
+    "template 分支丢 Params → 补 Params/ParamValues（spec 的意义正是形状+参数名）"
+  ]
+}

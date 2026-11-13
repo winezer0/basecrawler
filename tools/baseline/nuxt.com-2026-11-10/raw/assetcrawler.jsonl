@@ -1,0 +1,395 @@
+{"url":"https://nuxt.com/docs/5.x/","method":"GET","source":"robots","depth":0}
+{"url":"https://nuxt.com/pull/","method":"GET","source":"robots","depth":0}
+{"url":"https://nuxt.com/","method":"GET","source":"seed","depth":0,"status":200,"content_type":"text/html;charset=utf-8"}
+{"url":"https://nuxt.com/.well-known/api-catalog","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"application/linkset+json; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/sitemap.xml","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"text/xml; charset=UTF-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/.well-known/mcp/server-card.json","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"application/json; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/sitemap.md","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"text/markdown; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/llms.txt","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"text/plain; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/openapi.json","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"application/json; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/design.md","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"text/markdown; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BZpoBXwm.js","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/entry.B1lF9EMh.css","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"text/css; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/getting-started/introduction","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/search-4Iiclej3.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/llms-full.txt","method":"GET","source":"header:link","attribute":"link","depth":1,"status":200,"content_type":"text/plain; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DK3Fl9T5.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CULKnGMv.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/D2eSRGg6.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Da_cEkoy.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BW3xJdEx.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/EXPR","source":"js-ast","depth":2,"referer":"https://nuxt.com/_nuxt/Da_cEkoy.js","confidence":"template"}
+{"url":"https://nuxt.com/sanity/check/fileEXPR","source":"js-ast","depth":2,"referer":"https://nuxt.com/_nuxt/search-4Iiclej3.js","confidence":"template"}
+{"url":"https://nuxt.com/_nuxt/Ds_o96bg.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/C3BnDPIj.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CnOT-ex1.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BN6tzNIP.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Chx-wjBO.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/ChqUIxo4.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DAyLjtll.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DPZUGy5T.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Bsli7XF2.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CyvHbjSg.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DlVw0AdW.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/C8bHPIEF.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CRzLMJPS.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/B834GveO.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CXsYPu9O.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/lA-5H0qX.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/9iEUJqbO.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/B6GqwM7U.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/m3t1_CHn.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BsCYWyfi.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/l8hFr0Wo.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/dashboard/chat/:id()","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/docs/:version()/errors","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/modules/:slug()/:path(.*)*","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/blog/:slug()","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/chat/:id()","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/deploy/:slug()","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/nuxters/:username()","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/templates/:slug()","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/docs/:slug(.*)*","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/docs/3.x/examples/:pathMatch(.*)","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/docs/4.x/examples/:pathMatch(.*)","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/docs/5.x/examples/:pathMatch(.*)","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/docs/3.x/guide/directory-structure/:pathMatch(.*)","method":"GET","source":"route:route-table","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","kind":"route"}
+{"url":"https://nuxt.com/__nuxt_island/EXPR.json","source":"js-ast","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","confidence":"template"}
+{"url":"https://nuxt.com/EXPR(?=[/?","source":"js-ast","depth":2,"referer":"https://nuxt.com/_nuxt/BZpoBXwm.js","confidence":"template"}
+{"url":"https://nuxt.com/_nuxt/CL7gNmBN.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DBedXksl.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BNa0ld3L.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DwJH9lts.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/api/chats/EXPR","source":"js-ast","depth":2,"referer":"https://nuxt.com/_nuxt/DwJH9lts.js","confidence":"template"}
+{"url":"https://nuxt.com/api/chats/EXPR/title","source":"js-ast","depth":2,"referer":"https://nuxt.com/_nuxt/DwJH9lts.js","confidence":"template"}
+{"url":"https://nuxt.com/_nuxt/COBVEhIs.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/1ckq-nIt.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DWEoD8ZB.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Da7XSMIF.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/LczgkNfS.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BTbdZmuk.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Bng2rRDf.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DBb4PCIt.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/_XgXKljz.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BISXRYwn.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Cbnv9TNt.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BDos2ptr.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CqkPzrBQ.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BHnuT7gl.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DEDQk0lu.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DYyS0yYX.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BOexb36s.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DzFHcT6L.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BgKee5XX.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CvvBT_fK.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CT1nd7Eu.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fdAgRJIR.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DHihWhf5.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/17H-D5rF.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/B8XaCK9v.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Blx4YTsr.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DMss4AMu.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/C3sn9htJ.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/vfFI1VnD.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/MSrN0ClP.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/--1xS3qO.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DzQGYy8z.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/C_HVvSQE.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Djt2dsao.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CHSWPcqv.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/D8mzCvw_.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CRh9-rTs.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/C-giRA4D.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DAGO25XW.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BxmSwb4P.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/2XR3BR5N.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BZroznJH.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BqmerOIy.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BAKKRRYV.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DEWF_8lj.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BDNMzG2s.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DCf7aC9I.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Bludg5_j.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/gh_avatar/EXPR","source":"js-ast","depth":2,"referer":"https://nuxt.com/_nuxt/Bludg5_j.js","confidence":"template"}
+{"url":"https://nuxt.com/_nuxt/DzIpFl1y.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BWHH6Eyc.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BZ1zFidU.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Bc-M9GpI.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CLj8M7l6.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BSH3EvFl.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Dl65-Qhw.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CQo55Dm1.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BMd86PDn.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DenIpMj2.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Ce5_4aT_.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/ztHqrZru.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CQbLpDoZ.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CDBWOBJL.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BU3anrT1.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/D4BrKMiK.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DM2DfFuG.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BlMb89B0.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/3VOhqhf4.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CikhCMOV.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BKus-m1K.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/D1HohJqz.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BHc7X0cD.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BrF3CJ03.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/C8eIaKY7.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/wBn6u-38.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/BRlYcrmY.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/-Yh_gL1q.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/B5SKdRKK.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/D5ogEQRo.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/qAPzfTJn.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DIxgoc6A.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DIidYr3E.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Bmk5mlCC.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/aTu8u8iw.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/mBDeaw00.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/D_KdEp1M.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Brvij5x3.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/CMDKNZg6.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/B8GaD3oR.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/C1qWMS9Q.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/efOC6fLF.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/DyOhtXcE.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/api/chats/EXPR/messages","source":"js-ast","depth":2,"referer":"https://nuxt.com/_nuxt/DyOhtXcE.js","confidence":"template"}
+{"url":"https://nuxt.com/_nuxt/W6B24lQS.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/1MXNyaxZ.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/jTVYpzr1.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/Cu9gHeq9.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/D_pyPAzd.js","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"application/javascript; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/icon.png","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"image/png","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/new-social.jpg","method":"GET","source":"meta-og:image","attribute":"content","tag":"meta","depth":1,"status":200,"content_type":"image/jpeg","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/raw/index.md","method":"GET","source":"link","attribute":"href","tag":"link","depth":1,"status":200,"content_type":"text/markdown; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/DYJdeJPtCBIYWgA5cyxBmly7l27Wj1oQp4mFkXDxvIs-DPFPVSnB8cId8pOwgvRNA2TCO2OWamyoeCtk437Sapc.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/QpJYL2mwM_fWcwdT8T92e3Zj7wNrhqhFzZMwIpW9Yhk-XgOijeIybntTr80kfTNzJ_MAYXALsEz4LGK8FlCLUMQ.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/nRO08svVDfHK2I6XQv8acbCwVYFPI-lNFmbTO_Ato-U-leG_hYlPLJBni6ljwuquGygDJ11Q9JovV7X4etSwPIs.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/DyoSP_ZB-sZ6jdZm0DNNNAZlak-n8B55ylByyLLv58Y-LDxnRyFE6SL_0xO8Ook5rXOokOEsSmBy44omeJ02DT4.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/xiWtFoOGVpxz2O8rJiJmkaO17BlbbGGm_obdnXH3FNs-8YIR4ZfCCs9oJJ4E1XpjqOJwDB0_yPAN4AMVgQAVTKs.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/shQVi3meleYLIUqZP9-ZwNpu1UG0BrC8W1a0_vPu1vM-WIRtv4uldWqfFM5rfsEDcWL99nKboOnkZoW_g2Ev8Uk.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/okGTeHOzA93WHhiHQhh2kiQFJ8jP7Rs_J1FR3XblyKk-bIMLl2bdqTiV6xWjXZLjoJYX4UhZc8AFIlYM7Hc12TM.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/95LF05ynkR2iited5vKC3ML7Mt4iflufgyYJQAK9nF4-NZaZZt6E_IGCSpI3DA35nDyNvesPNS4QNP7XC2pYBYE.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/rKlr2fNB2-iyJhDGh3GjbB7U7xF6BMr1eV-ngyy8udQ-JfckSRSkmknXCHp5oZLIYR_jNB6MzYb7ifA6hU4lk2o.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/Nah9koTOFvXUREZWfV7DH4zgASpXCzPkz6Tn28ZWLF8-BPqOaS9b32mrF_JERGBi9aAWCHVMBVP2cgIrQCresgU.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/k3YRPyaHq8R9a3gxNSuQ3W_8hdDfEx-SbAtGnVOYnHY-fVFZzzariE_Uq-dTHevDSbvLurnlJRTddHpakm9Ws1w.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/6yQlgZNOH42hUtIIIHjZiNFc1WmiHD7IpV78HkewQzs-Qk_1yENQUazQQ0tP2ZD16gLhgnkqQqP7MhASnXvWtqQ.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/der4-T0bORlPDyrpWSOU_0VRetbtC4vnusni_kWmK7Q-GXB5hylV4plFt0WDHf1wY5BRE9_7uLFvbkkQKAdfTP0.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/23mtYSzxPVyLoxLNpoXveb5p0hEC2MbGLOudqhNuXQQ-sHyjhRga9hvdq4tAx7_wIeBFh1sLJ_E5PRwGnzrqxWs.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/l33xbi9DEvZxze48O8rxcUOmuUk5gDv2O0OrZEz0FuI-dgyaecc8CwRreuaMAiq40ab1d2cprv3HfuifvUVfwXE.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/fonts/xwIOK4HPdbSC6Mdc0x2VRT_mYY3ySqs1fy6nxcxXjiU-0j7FPoS1jkGvS2tsrn8rI3GG3RfFYZS8ICqy61eWDc8.woff2","method":"GET","source":"style-block","attribute":"style","tag":"style","depth":1,"status":200,"content_type":"font/woff2","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/getting-started/introduction","method":"GET","source":"a","attribute":"href","tag":"a","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/brands/louis-vuitton.svg","method":"GET","source":"style-attr","attribute":"style","tag":"span","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/nintendo.svg","method":"GET","source":"style-attr","attribute":"style","tag":"span","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/git-lab.svg","method":"GET","source":"style-attr","attribute":"style","tag":"span","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/prada.svg","method":"GET","source":"style-attr","attribute":"style","tag":"span","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/getting-started/installation","method":"GET","source":"a","attribute":"href","tag":"a","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/brands/backmarket.svg","method":"GET","source":"style-attr","attribute":"style","tag":"span","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/microsoft-edge-developer.svg","method":"GET","source":"style-attr","attribute":"style","tag":"span","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/brands/paul-smith.svg","method":"GET","source":"style-attr","attribute":"style","tag":"span","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/stack-overflow.svg","method":"GET","source":"style-attr","attribute":"style","tag":"span","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_auto","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":400,"content_type":"application/json;charset=UTF-8","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_auto,s_40x40/gh_avatar/yyx990803","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/jpeg","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/s_80x80/gh_avatar/yyx990803","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":404,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/s_512x439/assets/landing/deploy.svg","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/s_1024x878/assets/landing/deploy.svg","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/louis-vuitton.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/louis-vuitton.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/louis-vuitton.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/louis-vuitton.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/louis-vuitton.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/louis-vuitton.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/nintendo.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/nintendo.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/nintendo.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/nintendo.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://github.com/nuxt/nuxt","method":"GET","source":"a","attribute":"href","tag":"a","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://github.githubassets.com","source":"csp:child-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://gist.github.com/assets-cdn/worker/","source":"csp:child-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://uploads.github.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://www.githubstatus.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://collector.github.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://raw.githubusercontent.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://api.github.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://github-cloud.s3.amazonaws.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://github-production-repository-file-5c1aeb.s3.amazonaws.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://github-production-upload-manifest-file-7fdce7.s3.amazonaws.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://github-production-user-asset-6210df.s3.amazonaws.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://objects-origin.githubusercontent.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://copilot-proxy.githubusercontent.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://proxy.individual.githubcopilot.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://proxy.business.githubcopilot.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://proxy.enterprise.githubcopilot.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa0.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa1.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa2.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa3.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa4.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa5.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa6.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa7.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa8.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa9.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa10.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa11.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa12.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa13.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa14.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa15.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa16.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa17.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa18.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa19.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa30.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa31.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://productionresultssa32.blob.core.windows.net","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://github-production-repository-image-32fea6.s3.amazonaws.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://github-production-release-asset-2e65be.s3.amazonaws.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://insights.github.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://alive.github.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://alive-staging.github.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://api.githubcopilot.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://api.individual.githubcopilot.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://api.business.githubcopilot.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://api.enterprise.githubcopilot.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://production-copilot-host.webpubsub.azure.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://production-copilot-host-centralus.webpubsub.azure.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://production-copilot-host-centralus-02.webpubsub.azure.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://production-copilot-host-westus.webpubsub.azure.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://production-copilot-host-westus3.webpubsub.azure.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://production-copilot-host-eastasia.webpubsub.azure.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"wss://production-copilot-host-austriaeast.webpubsub.azure.com","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://api.github.com/cmc_internal/api/","source":"csp:connect-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://gist.github.com","source":"csp:form-action","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://copilot-workspace.githubnext.com","source":"csp:form-action","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://viewscreen.githubusercontent.com","source":"csp:frame-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://notebooks.githubusercontent.com","source":"csp:frame-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://media.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://camo.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://identicons.github.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://avatars.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://private-avatars.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://objects.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://release-assets.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://secured-user-images.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://user-images.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://private-user-images.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://opengraph.githubassets.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://repository-images.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://marketplace-screenshots.githubusercontent.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://copilotprodattachments.blob.core.windows.net/github-production-copilot-attachments/","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://customer-stories-feed.github.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://spotlights-feed.github.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://explore-feed.github.com","source":"csp:img-src","depth":1,"referer":"https://github.com/nuxt/nuxt","kind":"csp-source"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/nintendo.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/trade-republic.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/nintendo.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/trade-republic.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/trade-republic.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/trade-republic.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/trade-republic.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/prada.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/trade-republic.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/prada.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/prada.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/prada.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/prada.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/adyen.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/prada.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/adyen.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/adyen.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/adyen.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/adyen.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/nasa-jet-propulsion-laboratory.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/adyen.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/nasa-jet-propulsion-laboratory.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/nasa-jet-propulsion-laboratory.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/nasa-jet-propulsion-laboratory.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/nasa-jet-propulsion-laboratory.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/google-ventures.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/nasa-jet-propulsion-laboratory.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/google-ventures.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/google-ventures.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/google-ventures.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/google-ventures.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/microsoft-edge-developer.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/google-ventures.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/microsoft-edge-developer.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/microsoft-edge-developer.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/microsoft-edge-developer.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/microsoft-edge-developer.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/tiktok-ads.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/microsoft-edge-developer.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/tiktok-ads.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/tiktok-ads.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/tiktok-ads.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/tiktok-ads.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1292x726/assets/websites/aldi.webp","method":"GET","source":"img","attribute":"src","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/tiktok-ads.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_587x330/assets/websites/aldi.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_646x363/assets/websites/aldi.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_445x250/assets/websites/aldi.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_1174x660/assets/websites/aldi.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://ipx.nuxt.com/f_webp\u0026s_890x500/assets/websites/aldi.webp","method":"GET","source":"img","attribute":"srcset","tag":"img","depth":1,"status":200,"content_type":"image/webp","referer":"https://nuxt.com/"}
+{"url":"https://www.linkedin.cn/incareer/home","method":"GET","source":"a","attribute":"href","tag":"a","depth":1,"status":451,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_scripts","method":"GET","source":"js-ast","depth":1,"status":404,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/api/_evlog/ingest","method":"GET","source":"js-ast","depth":1,"status":404,"content_type":"application/json","referer":"https://nuxt.com/"}
+{"url":"https://github.com/nuxt/nuxt/blob/main/LICENSE","method":"GET","source":"a","attribute":"href","tag":"a","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/5.x/getting-started/introduction","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/pull/","method":"GET","source":"js-ast","depth":1,"status":404,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/raw","method":"GET","source":"js-ast","depth":1,"status":404,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/_nuxt/","method":"GET","source":"js-ast","depth":1,"status":404,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/api/kit/modules","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/guide/ai/mcp","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/examples/hello-world","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/api/advanced/hooks","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/examples/features/auto-imports","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/examples/routing/middleware","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/examples/advanced/config-extends","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/community/getting-help","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/examples/experimental/wasm","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/bridge/overview","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/docs/4.x/migration/overview","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/updates","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/modules/image/usage","method":"GET","source":"js-ast","depth":1,"status":404,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/modules/image/advanced","method":"GET","source":"js-ast","depth":1,"status":404,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/adyen.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/%3E","method":"GET","source":"js-ast","depth":1,"status":404,"content_type":"text/html;charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/harrods.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/n8n.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/brands/caudalie.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/trade-republic.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/la-poste.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/brands/dassault-systemes.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/brands/vans.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/armani.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/upwork.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/abnamro.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/the-north-face.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/shopware.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/kpn.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/jumbo.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://nuxt.com/assets/websites/logos/tchibo.svg","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"image/svg+xml","referer":"https://nuxt.com/"}
+{"url":"https://ui.nuxt.com/docs/getting-started/installation/nuxt","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://ui.nuxt.com/docs/getting-started/ai/mcp","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://content.nuxt.com/","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://content.nuxt.com/","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/clarity","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/docs/getting-started","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/api/feedback","method":"POST","source":"form","attribute":"action","tag":"form","depth":2,"referer":"https://scripts.nuxt.com/docs/getting-started","confidence":"interface","params":["path","website","sentiment"],"param_values":[{"name":"path","values":["/docs/getting-started"],"kind":"hidden"},{"name":"website","values":null,"kind":"input:text","type":"text"},{"name":"sentiment","values":["up","down"],"kind":"radio"}]}
+{"url":"https://scripts.nuxt.com/scripts/ahrefs-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/cloudflare-web-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/fathom-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/hotjar","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/google-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/databuddy-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/matomo-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/mixpanel-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/posthog","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/plausible-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/rybbit-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/speedcurve","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/segment","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}
+{"url":"https://scripts.nuxt.com/scripts/umami-analytics","method":"GET","source":"js-ast","depth":1,"status":200,"content_type":"text/html; charset=utf-8","referer":"https://nuxt.com/"}

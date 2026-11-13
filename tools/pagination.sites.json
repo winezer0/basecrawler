@@ -1,0 +1,8 @@
+[
+  {"name": "pokeapi", "url": "https://pokeapi.co/api/v2/pokemon?limit=20", "note": "显式 next 字段（对照组）"},
+  {"name": "dummyjson", "url": "https://dummyjson.com/products?limit=10&skip=0", "note": "显式 next 字段（对照组）"},
+  {"name": "huggingface", "url": "https://huggingface.co/api/models?limit=5", "note": "Link 头 rel=next（对照组，cursor 型）"},
+  {"name": "hn-algolia", "url": "https://hn.algolia.com/api/v1/search?query=golang&page=0", "note": "page/nbPages 计算型"},
+  {"name": "stackexchange", "url": "https://api.stackexchange.com/2.3/tags?site=stackoverflow&pagesize=10&page=1", "note": "has_more+page 计算型"},
+  {"name": "wikipedia", "url": "https://en.wikipedia.org/w/api.php?action=query&list=allpages&aplimit=5&format=json", "note": "continue 合并计算型"}
+]

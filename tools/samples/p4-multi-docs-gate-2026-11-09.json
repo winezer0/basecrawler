@@ -1,0 +1,33 @@
+{
+  "gate": "P-4 多文档站复验（O-1 口径扩大样本）",
+  "date": "2026-11-09",
+  "method": "同一二进制（含 M/N/O 全部能力）：文档页 -d 1 -testdata curl -testdata-send -testdata-auth 占位；统计 curl 块提取数、填充、发送确认",
+  "sites": [
+    {
+      "name": "github",
+      "url": "https://docs.github.com/en/rest/repos/repos",
+      "result": "200（1.4MB）",
+      "curl_extracted": 33,
+      "note": "O-1 已测：17 GET + 5 POST；api.github.com 401 真实状态确认；<YOUR-TOKEN> 原文保留 33 条、无认证头加占位 12 条"
+    },
+    {
+      "name": "stripe",
+      "url": "https://docs.stripe.com/api/charges/list",
+      "result": "200（1.8MB）",
+      "curl_extracted": 1,
+      "note": "侧栏 API 参考结构，主内容区 curl 密度低；POST /v1/charges/{1}/capture 被安全默认拦截（真实 API 绝不能发非幂等请求）"
+    },
+    {
+      "name": "gitlab",
+      "url": "https://docs.gitlab.com/ee/api/rest/",
+      "result": "301 → 200",
+      "curl_extracted": 1,
+      "note": "POST 创建 project；示例用假域名 gitlab.example.com——文档 curl 不总是真实 endpoint；body 按 key 填充生效（name→user1）"
+    }
+  ],
+  "findings": [
+    "curl 块提取密度取决于文档站结构：GitHub REST 文档把每 endpoint 的 curl 放页面正文（33/页），Stripe/GitLab 用侧栏/分散结构（1/页）",
+    "文档示例可能用假域名（gitlab.example.com），端点可达性确认会失败——属预期，不是缺陷",
+    "安全默认再次验证：三站共 2 条 POST 全部被拦截，未向任何真实 API 发送非幂等请求"
+  ]
+}

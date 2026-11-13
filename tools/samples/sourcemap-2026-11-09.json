@@ -1,0 +1,102 @@
+{
+  "sites": [
+    {
+      "domain": "github.com",
+      "maps": 0,
+      "sources": 0,
+      "normalizable": 0,
+      "fetched_live": 0,
+      "forms": {},
+      "samples": []
+    },
+    {
+      "domain": "wordpress.org",
+      "maps": 1,
+      "sources": 1,
+      "normalizable": 1,
+      "fetched_live": 0,
+      "forms": {
+        "relative": 1
+      },
+      "samples": []
+    },
+    {
+      "domain": "support.microsoft.com",
+      "maps": 3,
+      "sources": 202,
+      "normalizable": 202,
+      "fetched_live": 0,
+      "forms": {
+        "relative": 27,
+        "node_modules": 164,
+        "absolute": 11
+      },
+      "samples": []
+    },
+    {
+      "domain": "archive.org",
+      "maps": 1,
+      "sources": 3,
+      "normalizable": 3,
+      "fetched_live": 3,
+      "forms": {
+        "relative": 3
+      },
+      "samples": [
+        "https://archive.org/offshoot_assets/vendor/reactive-element/src/polyfill-support.ts",
+        "https://archive.org/offshoot_assets/vendor/lit-html/src/polyfill-support.ts",
+        "https://archive.org/offshoot_assets/vendor/lit-element/src/polyfill-support.ts"
+      ]
+    },
+    {
+      "domain": "doi.org",
+      "maps": 1,
+      "sources": 75,
+      "normalizable": 75,
+      "fetched_live": 10,
+      "forms": {
+        "relative": 22,
+        "node_modules": 53
+      },
+      "samples": [
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/js/src/dom/selector-engine.js",
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/js/src/util/index.js",
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/js/src/dom/event-handler.js",
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/js/src/dom/data.js",
+        "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/js/src/base-component.js"
+      ]
+    },
+    {
+      "domain": "web.archive.org",
+      "maps": 3,
+      "sources": 87,
+      "normalizable": 87,
+      "fetched_live": 0,
+      "forms": {
+        "relative": 87
+      },
+      "samples": []
+    },
+    {
+      "domain": "zoom.us",
+      "maps": 1,
+      "sources": 57,
+      "normalizable": 57,
+      "fetched_live": 0,
+      "forms": {
+        "webpack": 9,
+        "node_modules": 48
+      },
+      "samples": []
+    },
+    {
+      "domain": "who.int",
+      "maps": 0,
+      "sources": 0,
+      "normalizable": 0,
+      "fetched_live": 0,
+      "forms": {},
+      "samples": []
+    }
+  ]
+}
