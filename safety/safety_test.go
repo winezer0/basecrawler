@@ -133,7 +133,7 @@ func ExampleNewSafety() {
 	// true
 }
 
-// ExampleSafety_SkipRequest 展示静态爬虫（assetcrawler）在发送测试请求前的
+// ExampleSafety_SkipRequest 展示静态爬虫（basecrawler）在发送测试请求前的
 // 三合一判定：动作词表只在非幂等方法上生效，GET 不误拦。
 func ExampleSafety_SkipRequest() {
 	s, _ := NewSafetyWithActions(true, nil, nil, nil)

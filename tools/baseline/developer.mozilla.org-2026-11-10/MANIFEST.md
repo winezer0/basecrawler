@@ -5,8 +5,8 @@
 代码：v0.4.0（`aca3379`，extractor 拆包后）
 
 ```bash
-./assetcrawler.exe -u https://developer.mozilla.org/en-US/ -d 2 -max-urls 300 -rl 5 -c 5 \
-    -timeout 15 -jsonl -o raw/assetcrawler.jsonl -silent
+./basecrawler.exe -u https://developer.mozilla.org/en-US/ -d 2 -max-urls 300 -rl 5 -c 5 \
+    -timeout 15 -jsonl -o raw/basecrawler.jsonl -silent
 ```
 
 | 指标 | 值 |

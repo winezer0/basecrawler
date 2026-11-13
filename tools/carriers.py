@@ -4,7 +4,7 @@
 
 回答一个具体问题：响应头 Link、importmap、Web App Manifest、
 Service Worker 预缓存、各类内联 hydration 脚本里的 URL，
-有多少是 assetcrawler 现有结果里**没有**的？
+有多少是 basecrawler 现有结果里**没有**的？
 
 只有「独有 URL」才是加规则的依据；已由 HTML 标签覆盖的载体加规则是零增量。
 脚本分两步，抓到的样本可离线反复分析：
@@ -273,7 +273,7 @@ def fetch_one(host, out_dir, proxy, timeout=25):
     if proxy:
         handlers.append(urllib.request.ProxyHandler({"http": proxy, "https": proxy}))
     opener = urllib.request.build_opener(*handlers)
-    opener.addheaders = [("User-Agent", "Mozilla/5.0 (compatible; assetcrawler-carrier-probe/1.0)")]
+    opener.addheaders = [("User-Agent", "Mozilla/5.0 (compatible; basecrawler-carrier-probe/1.0)")]
     url = "https://" + host + "/"
     with opener.open(url, timeout=timeout) as resp:
         body = resp.read(4 * 1024 * 1024).decode("utf-8", "replace")
@@ -326,7 +326,7 @@ def main():
     ap.add_argument("--sites", required=True, help="JSON 数组，元素为 host 字符串")
     ap.add_argument("--out-dir", default="", help="fetch 输出目录")
     ap.add_argument("--sample-dir", default="", help="analyze 读取的样本目录")
-    ap.add_argument("--results-dir", default="", help="assetcrawler JSONL 所在目录")
+    ap.add_argument("--results-dir", default="", help="basecrawler JSONL 所在目录")
     ap.add_argument("--proxy", default="")
     ap.add_argument("--json", default="", help="analyze 报告输出路径")
     args = ap.parse_args()

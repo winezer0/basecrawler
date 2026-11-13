@@ -30,7 +30,7 @@ def with_gate(gate):
     return deco
 
 
-PKG = "github.com/winezer0/assetcrawler"
+PKG = "github.com/winezer0/basecrawler"
 GATE = {"cases_min": 10, "coverage_min_per_pkg": {PKG: 80.0}}
 
 

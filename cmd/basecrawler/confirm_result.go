@@ -11,13 +11,13 @@ import (
 // Source=testfill 是确认记录的标识：status 是测试请求的响应状态而非发现
 // 时的状态，method 是实际发送方法（可能是 POST/PUT/PATCH/DELETE），
 // URL 是 SentURL()——含填充后的 query，与真正发出的地址一致。
-func confirmResults(cfs []testfill.Confirmation) []assetcrawler.Result {
-	out := make([]assetcrawler.Result, 0, len(cfs))
+func confirmResults(cfs []testfill.Confirmation) []basecrawler.Result {
+	out := make([]basecrawler.Result, 0, len(cfs))
 	for _, c := range cfs {
 		if !c.Sent || c.StatusCode <= 0 {
 			continue
 		}
-		out = append(out, assetcrawler.Result{
+		out = append(out, basecrawler.Result{
 			URL:        c.SentURL(),
 			Method:     c.Method,
 			Source:     "testfill",

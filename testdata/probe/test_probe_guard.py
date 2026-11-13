@@ -21,7 +21,7 @@ sys.path.insert(0, HERE)
 import check  # noqa: E402
 import common  # noqa: E402
 
-PROBE_BIN = os.environ.get("PROBE_BIN") or os.path.join(check.ROOT, "assetcrawler.exe")
+PROBE_BIN = os.environ.get("PROBE_BIN") or os.path.join(check.ROOT, "basecrawler.exe")
 
 
 def free_port():

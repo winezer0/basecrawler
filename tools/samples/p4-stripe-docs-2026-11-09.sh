@@ -72,6 +72,6 @@ https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xTTJKVGtMa2RJd0h1N2l4KOfB
 https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xTTJKVGtMa2RJd0h1N2l4KOvG06AGMgZfBXyr1aw6LBa9vaaSRWU96d8qBwz9z2J_CObiV_H2-e8RezSK_sw0KISesp4czsOUlVKY
 https://docs.stripe.com/v1/charges/search
 #!/bin/sh
-# assetcrawler 测试请求（凭证为占位符，执行前替换）
+# basecrawler 测试请求（凭证为占位符，执行前替换）
 
 curl -X POST 'https://api.stripe.com/v1/charges/{1}/capture' -H 'Authorization: Bearer ${STRIPE_KEY}' -H 'Stripe-Version: 2026-10-28.endive'  # 跳过: POST 非幂等方法，需 AllowUnsafe 才发送

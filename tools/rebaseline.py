@@ -7,7 +7,7 @@
 
 用法：
   python tools/rebaseline.py                              # 只打印命令（安全）
-  python tools/rebaseline.py --run --bin ./assetcrawler.exe --out-dir /tmp/rebase
+  python tools/rebaseline.py --run --bin ./basecrawler.exe --out-dir /tmp/rebase
   python tools/rebaseline.py --run --proxy http://127.0.0.1:10808
 
 采集口径来自 baseline.sites.json，与 drift.py 共用同一套开关。
@@ -52,7 +52,7 @@ def canonicalize(site, jsonl_path):
 def main():
     ap = argparse.ArgumentParser(description="基线重采（默认 dry-run）")
     ap.add_argument("--sites", default=str(DEFAULT_SITES), help="站点清单 JSON")
-    ap.add_argument("--bin", default="./assetcrawler.exe", help="当前构建的二进制")
+    ap.add_argument("--bin", default="./basecrawler.exe", help="当前构建的二进制")
     ap.add_argument("--out-dir", default="tools/rebaseline-out", help="产物目录，不写回 baseline/")
     ap.add_argument("--proxy", default="", help="可选代理")
     ap.add_argument("--timeout", type=int, default=300, help="单次采集超时秒数")

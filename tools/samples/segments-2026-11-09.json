@@ -83,7 +83,7 @@
       "missed": [],
       "missed_live": 0,
       "missed_dead": 0,
-      "error": "TimeoutExpired: Command '['./assetcrawler.exe', '-u', 'https://openlibrary.org/', '-d', '2', '-max-urls', '120', '-c', '3', '-timeout', '15', '-js-engine', 'auto', '-jsonl', '-o', 'C:\\\\Users\\\\windows\\\\AppData\\\\Local\\\\Temp\\\\o2\\\\openlibrary-auto.jsonl', '-silent', '-proxy', 'http://127.0.0.1:10808']' timed out after 600 seconds"
+      "error": "TimeoutExpired: Command '['./basecrawler.exe', '-u', 'https://openlibrary.org/', '-d', '2', '-max-urls', '120', '-c', '3', '-timeout', '15', '-js-engine', 'auto', '-jsonl', '-o', 'C:\\\\Users\\\\windows\\\\AppData\\\\Local\\\\Temp\\\\o2\\\\openlibrary-auto.jsonl', '-silent', '-proxy', 'http://127.0.0.1:10808']' timed out after 600 seconds"
     },
     {
       "name": "httpbin",

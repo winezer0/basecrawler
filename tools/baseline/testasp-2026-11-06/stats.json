@@ -32,7 +32,7 @@
       "outside_unique": 462,
       "raw_count": 819
     },
-    "assetcrawler": {
+    "basecrawler": {
       "status": "ok",
       "inside_unique": 44,
       "outside_unique": 0,

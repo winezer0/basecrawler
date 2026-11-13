@@ -35,12 +35,12 @@ func TestParseArgsDefaults(t *testing.T) {
 		{"MaxURLs", o.MaxURLs, 2000},
 		{"MaxBodySize", o.MaxBodySize, int64(2 << 20)},
 		{"Timeout", o.Timeout, 10 * time.Second},
-		{"Scope", o.Scope, assetcrawler.ScopeSubdomain},
+		{"Scope", o.Scope, basecrawler.ScopeSubdomain},
 		{"FollowRobots", o.FollowRobots, true},
 		{"FollowRobotsDisallow", o.FollowRobotsDisallow, true},
 		{"FollowSitemap", o.FollowSitemap, true},
 		{"ExtractJS", o.ExtractJS, true},
-		{"JSEngine", o.JSEngine, assetcrawler.JSEngineAuto},
+		{"JSEngine", o.JSEngine, basecrawler.JSEngineAuto},
 		{"ExtractChunkGraph", o.ExtractChunkGraph, true},
 		{"RouteExec", o.RouteExec, true},
 		{"DeobfExec", o.DeobfExec, true},
@@ -122,14 +122,14 @@ func TestParseArgsMapping(t *testing.T) {
 		{"MaxURLs", o.MaxURLs, 100},
 		{"MaxBodySize", o.MaxBodySize, int64(1024)},
 		{"Timeout", o.Timeout, 3 * time.Second},
-		{"Scope", o.Scope, assetcrawler.ScopeSameHost},
+		{"Scope", o.Scope, basecrawler.ScopeSameHost},
 		{"Proxy", o.Proxy, "http://127.0.0.1:8080"},
 		{"Insecure", o.Insecure, true},
 		{"FollowRobots", o.FollowRobots, false},
 		{"FollowRobotsDisallow", o.FollowRobotsDisallow, false},
 		{"FollowSitemap", o.FollowSitemap, false},
 		{"ExtractJS", o.ExtractJS, false},
-		{"JSEngine", o.JSEngine, assetcrawler.JSEngineTreesitter},
+		{"JSEngine", o.JSEngine, basecrawler.JSEngineTreesitter},
 		{"ExtractChunkGraph", o.ExtractChunkGraph, false},
 		{"RouteExec", o.RouteExec, false},
 		{"DeobfExec", o.DeobfExec, false},
@@ -155,11 +155,11 @@ func TestParseArgsMapping(t *testing.T) {
 // TestParseArgsScope 覆盖 scope 三档：非法值回落到默认的 subdomain 而不是报错，
 // 因为扫描脚本里偶尔会传入旧版本的值，中断整个批处理不划算。
 func TestParseArgsScope(t *testing.T) {
-	cases := map[string]assetcrawler.Scope{
-		"same-host": assetcrawler.ScopeSameHost,
-		"subdomain": assetcrawler.ScopeSubdomain,
-		"any":       assetcrawler.ScopeAny,
-		"bogus":     assetcrawler.ScopeSubdomain,
+	cases := map[string]basecrawler.Scope{
+		"same-host": basecrawler.ScopeSameHost,
+		"subdomain": basecrawler.ScopeSubdomain,
+		"any":       basecrawler.ScopeAny,
+		"bogus":     basecrawler.ScopeSubdomain,
 	}
 	for in, want := range cases {
 		cfg, err := parseArgs([]string{"-u", "https://x/", "--scope", in}, &bytes.Buffer{})
@@ -238,7 +238,7 @@ func TestParseArgsFuzzDictAppend(t *testing.T) {
 	if err != nil {
 		t.Fatalf("parseArgs: %v", err)
 	}
-	builtin := assetcrawler.BuiltinFuzzDict()
+	builtin := basecrawler.BuiltinFuzzDict()
 	if len(cfg.Opts.FuzzDict) <= len(builtin) {
 		t.Fatalf("追加后字典 %d 条，未超过内置 %d 条", len(cfg.Opts.FuzzDict), len(builtin))
 	}
@@ -331,16 +331,16 @@ func TestParseArgsJSProbe(t *testing.T) {
 
 // TestParseArgsScope 验证 scope 五档命名、旧别名兼容与 regex 组合校验。
 func TestParseArgsScopeNames(t *testing.T) {
-	cases := map[string]assetcrawler.Scope{
-		"rdn":       assetcrawler.ScopeSubdomain,
-		"subdomain": assetcrawler.ScopeSubdomain, // 旧别名
-		"fqdn":      assetcrawler.ScopeSameHost,
-		"same-host": assetcrawler.ScopeSameHost, // 旧别名
-		"dn":        assetcrawler.ScopeDN,
-		"regex":     assetcrawler.ScopeRegex,
-		"all":       assetcrawler.ScopeAny,
-		"any":       assetcrawler.ScopeAny, // 旧别名
-		"":          assetcrawler.ScopeSubdomain,
+	cases := map[string]basecrawler.Scope{
+		"rdn":       basecrawler.ScopeSubdomain,
+		"subdomain": basecrawler.ScopeSubdomain, // 旧别名
+		"fqdn":      basecrawler.ScopeSameHost,
+		"same-host": basecrawler.ScopeSameHost, // 旧别名
+		"dn":        basecrawler.ScopeDN,
+		"regex":     basecrawler.ScopeRegex,
+		"all":       basecrawler.ScopeAny,
+		"any":       basecrawler.ScopeAny, // 旧别名
+		"":          basecrawler.ScopeSubdomain,
 	}
 	for name, want := range cases {
 		args := []string{"-u", "https://x/"}

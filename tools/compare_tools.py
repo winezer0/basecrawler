@@ -4,7 +4,7 @@
 支持解析：
   - katana 的 jsonl（--jsonl 输出）
   - crawlergo 的 json（--output-json/--output-mode json）
-  - assetcrawler 的 jsonl
+  - basecrawler 的 jsonl
   - tanscan 的 /api/v1/scan/task/urls 响应
 
 用法：
@@ -13,7 +13,7 @@
         katana_static=katana_static.jsonl \
         crawlergo=cg.json \
         tanscan=ts_urls.json \
-        assetcrawler=ac.jsonl
+        basecrawler=ac.jsonl
 """
 import argparse
 import json
@@ -61,7 +61,7 @@ def load_crawlergo(path):
             for r in (d.get("req_list") or [])]
 
 
-def load_assetcrawler(path):
+def load_basecrawler(path):
     out = []
     for line in open(path, encoding="utf-8"):
         line = line.strip()
@@ -81,7 +81,7 @@ def load_tanscan(path):
 LOADERS = {
     "katana": load_katana,
     "crawlergo": load_crawlergo,
-    "assetcrawler": load_assetcrawler,
+    "basecrawler": load_basecrawler,
     "tanscan": load_tanscan,
 }
 
@@ -91,7 +91,7 @@ def detect(path):
         with open(path, encoding="utf-8") as f:
             head = f.readline()
         return "crawlergo" if '"req_list"' in head else (
-            "katana" if '"request"' in head else "assetcrawler")
+            "katana" if '"request"' in head else "basecrawler")
     return None
 
 
@@ -111,7 +111,7 @@ def main():
                 kind = k
                 break
         if kind is None:
-            kind = detect(path) or "assetcrawler"
+            kind = detect(path) or "basecrawler"
         rows = LOADERS[kind](path)
         paths = {}
         for r in rows:

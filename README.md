@@ -1,4 +1,4 @@
-# assetcrawler
+# basecrawler
 
 零浏览器依赖的 Go API 目标发现引擎。
 
@@ -33,7 +33,7 @@ bundle / 混淆解码器，用来恢复静态看不见的运行时路由与字�
 ## 包结构
 
 ```
-assetcrawler/      编排层：种子、BFS 调度、结果组装
+basecrawler/      编排层：种子、BFS 调度、结果组装
 ├── fetcher/     HTTP 抓取：连接池、限速、按 host 并发、重试、重定向链、body 截断
 ├── extractor/   URL 提取编排：FromHTML / FromJS / FromHeaders 等载体分发
 │   ├── base/        共享类型：Request / ParamValue / LimitReport + 通用小工具
@@ -50,7 +50,7 @@ assetcrawler/      编排层：种子、BFS 调度、结果组装
 ├── routegraph/  打包产物恢复：chunk 文件名 + 前端路由表（自带的 JS 词法分析器）
 ├── jsext/       JS AST 提取引擎：统一契约 + goja / gotreesitter 两套实现
 ├── testfill/    测试请求填充与产物渲染（curl / python / postman / http / json）
-├── safety/      危险动作拦截公共工具包（零依赖，assetcrawler / prcrawler 共用）
+├── safety/      危险动作拦截公共工具包（零依赖，basecrawler / prcrawler 共用）
 └── csp/         CSP / Report-To 响应头解析：纯函数工具包，由编排层调用
 ```
 
@@ -59,7 +59,7 @@ extractor 通过 Options 注入 AST 能力；extractor 编排层本身不发起�
 但 `extractor/deobf` 子包会链接 goja 用于沙箱执行）：
 
 ```
-assetcrawler ──┬──> fetcher
+basecrawler ──┬──> fetcher
              ├──> extractor ──(注入)──> jsext/{goja,treesitter}
              │             └──> deobf ──> goja
              ├──> frontier
@@ -154,8 +154,8 @@ testfill 生成测试请求时默认把这些静态值替换为占位测试值�
 （也抓取，但调用方可据此过滤——SPA 的 `/admin/users` 在服务端往往只是同一个 index.html）。
 
 ```bash
-assetcrawler -u https://target/ --jsonl                # 默认开启
-assetcrawler -u https://target/ --no-chunk-graph       # 关掉
+basecrawler -u https://target/ --jsonl                # 默认开启
+basecrawler -u https://target/ --no-chunk-graph       # 关掉
 ```
 
 **bundle 执行兜底（默认开启，`--no-route-exec` 关闭）**
@@ -164,8 +164,8 @@ assetcrawler -u https://target/ --no-chunk-graph       # 关掉
 就把 bundle 在 goja 里跑一遍。这条能力**默认编在二进制里，且默认开启**：
 
 ```bash
-assetcrawler -u https://target/                  # 默认执行
-assetcrawler -u https://target/ --no-route-exec  # 显式关闭
+basecrawler -u https://target/                  # 默认执行
+basecrawler -u https://target/ --no-route-exec  # 显式关闭
 ```
 
 代价是链接 goja 的完整 VM 与 esbuild 转译器：二进制体积增加（当前值由
@@ -207,11 +207,11 @@ eval 字符串字面量里，正则与 AST 都提不到。整条链默认开启�
 **路径 fuzz（默认开启，`--no-fuzz` 关闭）与相似 URL 过滤（`--fsu`）**
 
 ```bash
-assetcrawler -u https://target/                          # 默认探内置 48 条 API 高价值路径
-assetcrawler -u https://target/ --no-fuzz                # 显式关闭
-assetcrawler -u https://target/ --fuzz-dict fuzzdict.txt # 追加还原完整 154 条（自动去重）
-assetcrawler -u https://target/ --fuzz-dict my.txt       # 追加自定义路径
-assetcrawler -u https://target/ --fsu                    # 路径形状归并，对齐 katana --fsu
+basecrawler -u https://target/                          # 默认探内置 48 条 API 高价值路径
+basecrawler -u https://target/ --no-fuzz                # 显式关闭
+basecrawler -u https://target/ --fuzz-dict fuzzdict.txt # 追加还原完整 154 条（自动去重）
+basecrawler -u https://target/ --fuzz-dict my.txt       # 追加自定义路径
+basecrawler -u https://target/ --fsu                    # 路径形状归并，对齐 katana --fsu
 ```
 
 内置字典是面向 API 发现的高价值子集（48 条，`fuzzdict-core.txt`），已包含
@@ -226,8 +226,8 @@ fuzz 命中页面纳入正常爬取；探测类来源（fuzz / openapi-probe）4
 **总时长控制（`--ct`）与输出格式（`-O`）**
 
 ```bash
-assetcrawler -u https://target/ --ct 30m              # 精确收敛，超时提示 [limit] time budget reached
-assetcrawler -u https://target/ -O txt -o out/urls   # json（默认，保留来源）| txt（去重纯列表）
+basecrawler -u https://target/ --ct 30m              # 精确收敛，超时提示 [limit] time budget reached
+basecrawler -u https://target/ -O txt -o out/urls   # json（默认，保留来源）| txt（去重纯列表）
 ```
 
 `--ct` 接受裸秒数或 Go duration 语法；0/省略不限。超时走与 Ctrl+C 相同的收敛路径，
@@ -248,12 +248,12 @@ txt 与 JSONL 走同一套过滤，判定顺序固定：**先黑名单命中则�
 `:param` 模板、POST 接口形状）。**0 只是普通状态码，没有例外规则**。
 
 ```bash
-assetcrawler -u https://target/ -s 200                  # 只 200
-assetcrawler -u https://target/ -s 404                  # 只看死链
-assetcrawler -u https://target/ -s 0                    # 只看线索
-assetcrawler -u https://target/ -s 200-399,401,403      # 严格「确实有效」口径
-assetcrawler -u https://target/ -s all                  # 全量，替代旧的 --include-invalid
-assetcrawler -u https://target/ -s all -S 404,500-599   # 全量除 404/5xx
+basecrawler -u https://target/ -s 200                  # 只 200
+basecrawler -u https://target/ -s 404                  # 只看死链
+basecrawler -u https://target/ -s 0                    # 只看线索
+basecrawler -u https://target/ -s 200-399,401,403      # 严格「确实有效」口径
+basecrawler -u https://target/ -s all                  # 全量，替代旧的 --include-invalid
+basecrawler -u https://target/ -s all -S 404,500-599   # 全量除 404/5xx
 ```
 
 默认码表沿用 ffuf，因此 **405、500 会出现在默认输出里**；要严格只给下游
@@ -391,20 +391,20 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/winezer0/assetcrawler"
+	"github.com/winezer0/basecrawler"
 )
 
 func main() {
-	opts := assetcrawler.DefaultOptions()
+	opts := basecrawler.DefaultOptions()
 	opts.MaxDepth = 3
 	opts.Concurrency = 10
-	opts.Scope = assetcrawler.ScopeSubdomain
-	opts.OnResult = func(r assetcrawler.Result) {
+	opts.Scope = basecrawler.ScopeSubdomain
+	opts.OnResult = func(r basecrawler.Result) {
 		// 库内部已串行化回调，直接写文件不需要额外加锁
 		fmt.Printf("%-60s %s %d\n", r.URL, r.Source, r.StatusCode)
 	}
 
-	c, _ := assetcrawler.New(opts)
+	c, _ := basecrawler.New(opts)
 	defer c.Close()
 
 	results, _ := c.Crawl(context.Background(), "https://example.com")
@@ -453,48 +453,48 @@ for _, r := range extractor.FromHTML(doc, extractor.DefaultOptions()) {
 版本查询（早于一切初始化，不发请求）：
 
 ```bash
-assetcrawler --version   # dev (commit <vcs.time>)；发布构建显示注入的版本号
+basecrawler --version   # dev (commit <vcs.time>)；发布构建显示注入的版本号
 ```
 
 发布版本号由构建时注入（`-ldflags "-X main.version=<tag>"`），
 打 `v*` tag 时 `.github/workflows/release.yml` 自动构建双平台产物
 （含 SHA256SUMS）并创建 Release。
 
-CLI（`cmd/assetcrawler`，解析引擎为 [kong](https://github.com/alecthomas/kong)；
+CLI（`cmd/basecrawler`，解析引擎为 [kong](https://github.com/alecthomas/kong)；
 **GNU 风格 flag**：多字符参数双横线 `--max-urls`，单字符保留短名 `-u`/`-d`/`-O`）：
 ```bash
 # 只要 URL 列表
-assetcrawler -u https://example.com -d 3 -o urls.txt
+basecrawler -u https://example.com -d 3 -o urls.txt
 
 # JSONL，带来源与状态码
-assetcrawler -u https://example.com --jsonl -o result.jsonl
+basecrawler -u https://example.com --jsonl -o result.jsonl
 
 # 收敛范围、加认证头、走代理
-assetcrawler -u https://example.com --scope same-host -H "Cookie: sid=xxx" --proxy http://127.0.0.1:8080
+basecrawler -u https://example.com --scope same-host -H "Cookie: sid=xxx" --proxy http://127.0.0.1:8080
 
 # 自定义路径探测：追加到内置字典（重复条目自动去重）
 printf '/.well-known/internal.json\n/ops/panel\n' > mydict.txt
-assetcrawler -u https://example.com --fuzz-dict mydict.txt
+basecrawler -u https://example.com --fuzz-dict mydict.txt
 
 # 完全静态抓取：关掉默认开启的探测与执行链
-assetcrawler -u https://example.com --no-fuzz --no-probe-openapi \
+basecrawler -u https://example.com --no-fuzz --no-probe-openapi \
     --no-route-expand --no-deobf --no-route-exec --no-deobf-exec
 
 # 测试数据填充：把采集结果（含文档 curl 代码块）渲染成可跑的请求脚本
-assetcrawler -u https://platform.openai.com/docs/api-reference -d 3 \
+basecrawler -u https://platform.openai.com/docs/api-reference -d 3 \
     --testdata curl --testdata-auth 'Authorization: Bearer ${TOKEN}' -o test.sh
 
 # 其他产物格式：postman / python / http / json（jsonl）
-assetcrawler -u https://target/ --testdata postman --testdata-out collection.json
+basecrawler -u https://target/ --testdata postman --testdata-out collection.json
 
 # 默认：自动填充并发送测试请求（含 POST 表单提交、所有 HTTP 方法），
 # 响应状态同时写入主结果文件（Source=testfill）与产物行内注释
 # input type 决定值形态，POST 参数进 body；hidden 静态值替换为占位测试值
 # safety 默认拦截危险动作，--max-testfill 默认最多发 200 条
-assetcrawler -u https://target/ --testdata curl -o test.sh
+basecrawler -u https://target/ --testdata curl -o test.sh
 
 # 只生成脚本不发送
-assetcrawler -u https://target/ --testdata curl --no-testfill -o test.sh
+basecrawler -u https://target/ --testdata curl --no-testfill -o test.sh
 ```
 
 常用参数（GNU 风格：多字符一律 `--xx`，单字符短名保留 `-u/-d/-c/-o/-O/-s/-v/-k/-i/-H`）：
@@ -537,7 +537,7 @@ assetcrawler -u https://target/ --testdata curl --no-testfill -o test.sh
 （实测 2.4%，主流站 0%）；不需要就用 `--no-probe-openapi` 关掉。
 
 ```bash
-assetcrawler -u https://petstore.swagger.io
+basecrawler -u https://petstore.swagger.io
 # Source=openapi、Confidence=template 的条目就是 spec 里的接口形状，
 # 路径模板是 /pet/:petId 形式（不是 {petId}，那会被 URL 编码成 %7BpetId%7D）
 ```
@@ -560,7 +560,7 @@ robots Disallow 入队抓取、testfill 自动填充与发送（所有方法，�
 要完全静态运行就一次性全关：
 
 ```bash
-assetcrawler -u https://target/ --no-fuzz --no-probe-openapi \
+basecrawler -u https://target/ --no-fuzz --no-probe-openapi \
     --no-route-expand --no-deobf --no-route-exec --no-deobf-exec \
     --no-robots-disallow --no-testfill
 ```

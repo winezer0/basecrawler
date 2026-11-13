@@ -1,4 +1,4 @@
-// Package assetcrawler 是一个零浏览器依赖的 Web URL 资产采集引擎。
+// Package basecrawler 是一个零浏览器依赖的 Web URL 资产采集引擎。
 //
 // 本包只做编排，具体能力由三个子包提供，三者互不依赖：
 //

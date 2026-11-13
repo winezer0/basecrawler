@@ -115,7 +115,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cover", action="store_true", help="额外统计覆盖率")
     ap.add_argument("--gate", action="store_true", help="按 gate.json 做门禁（隐含 --cover）")
-    ap.add_argument("--bin", default=os.path.join(ROOT, "assetcrawler.exe"))
+    ap.add_argument("--bin", default=os.path.join(ROOT, "basecrawler.exe"))
     ap.add_argument("--json", action="store_true")
     args = ap.parse_args()
 

@@ -33,7 +33,7 @@ SOURCES = [
     ("cariddi", "cariddi.txt", "text"),
     ("URLFinder-m1", "urlfinder_m1.txt", "text"),
     ("URLFinder-m2", "urlfinder_m2.txt", "text"),
-    ("assetcrawler", "assetcrawler.jsonl", "jsonl"),
+    ("basecrawler", "basecrawler.jsonl", "jsonl"),
 ]
 
 
@@ -187,12 +187,12 @@ def cmd_stable(args):
     规则只动扩展名前的最后一段，且要求长度 >= 6：
     Vue 的 `app.B91ytTIH.js` 会归一，而 `app.js`、`vue.global.js` 不会被动。
     """
-    raw = os.path.join(args.raw_dir, "assetcrawler.jsonl")
+    raw = os.path.join(args.raw_dir, "basecrawler.jsonl")
     urls = load(raw, "jsonl")
     if urls is None:
         sys.exit(f"找不到 {raw}")
 
-    # 只保留站内 URL：与 urls-assetcrawler.txt 同口径，
+    # 只保留站内 URL：与 urls-basecrawler.txt 同口径，
     # 否则 CSP 带进来的外部域名会让 stable 基线漂移。
     out = sorted({stable_of(u) for u in urls if host_of(u).endswith(args.host)})
     path = os.path.join(args.out, "urls-stable.txt")

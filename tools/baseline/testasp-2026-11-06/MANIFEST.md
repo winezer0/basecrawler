@@ -17,10 +17,10 @@
 | cariddi | 37 | 0 | 37 |  |
 | URLFinder-m1 | 11 | 5 | 28 |  |
 | URLFinder-m2 | 28 | 462 | 819 | 外链 462 条，站内占比仅 6% |
-| assetcrawler | 44 | 0 | 44 |  |
+| basecrawler | 44 | 0 | 44 |  |
 | **合并去重** | **49** | — | — | 所有工具站内 URL 的并集 |
 
-`assetcrawler` 覆盖 44/49，未覆盖 5 条，
+`basecrawler` 覆盖 44/49，未覆盖 5 条，
 且这些未覆盖项都有明确原因（见「已知差异」）。
 
 ## 原始输出（已清理）
@@ -46,7 +46,7 @@ python ../baseline.py snapshot . -o ../baseline/testasp-2026-11-07
 ## 已知差异（比对时不要误判为回退）
 
 1. **`cariddi` 独有的 `robots.txt` / `sitemap.xml`**
-   它把这两个文件本身当结果输出；`assetcrawler` 把它们当采集基础设施，
+   它把这两个文件本身当结果输出；`basecrawler` 把它们当采集基础设施，
    会读取但不作为结果记录。这是设计选择，不是漏抓。
 
 2. **`URLFinder` 独有的 `text/css` 系列**
@@ -121,7 +121,7 @@ testasp.vulnweb.com/x
 - 目标站点内容变更（`testasp.vulnweb.com` 是公开靶站，页面可能被调整）
 - 任一工具升级版本
 - 测试口径变更（深度、并发、超时、是否带 `-s`）
-- `assetcrawler` 的提取规则发生有意变更（此时应先看 `diff` 明细，确认是改好了还是改坏了）
+- `basecrawler` 的提取规则发生有意变更（此时应先看 `diff` 明细，确认是改好了还是改坏了）
 
 目标站点内容不稳定这一点需要特别注意：该站首页会随机展示论坛帖子，
 `showthread.asp?id=N` 的 N 范围可能变化，导致 URL 数量小幅波动。

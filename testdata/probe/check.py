@@ -6,7 +6,7 @@
 
 用法：
   python check.py
-  python check.py --bin ../../assetcrawler.exe
+  python check.py --bin ../../basecrawler.exe
   python check.py --port 18081       # 指定端口
   python check.py --verbose          # 打印每个用例的明细
 
@@ -80,7 +80,7 @@ def wait_ready(base, timeout=10):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--bin", default=os.path.join(ROOT, "assetcrawler.exe"),
+    ap.add_argument("--bin", default=os.path.join(ROOT, "basecrawler.exe"),
                     help="资产采集器路径")
     ap.add_argument("--verbose", action="store_true")
     ap.add_argument("--port", type=int, default=0,
@@ -90,7 +90,7 @@ def main():
     args = ap.parse_args()
 
     if not os.path.exists(args.bin):
-        sys.exit(f"找不到采集器: {args.bin}（先 go build -o assetcrawler.exe ./cmd/assetcrawler）")
+        sys.exit(f"找不到采集器: {args.bin}（先 go build -o basecrawler.exe ./cmd/basecrawler）")
 
     port = pick_port(args.port)
     base = target_url(port)

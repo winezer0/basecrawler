@@ -7,7 +7,7 @@ import (
 
 // version 是发布版本号，默认为 dev。发布构建由链接器覆盖：
 //
-//	go build -ldflags "-X main.version=v0.2.0" -buildvcs=true ./cmd/assetcrawler
+//	go build -ldflags "-X main.version=v0.2.0" -buildvcs=true ./cmd/basecrawler
 //
 // 设计参照 tanspec 的 CLI 版本方案：构建时注入（发布工作流传版本号、
 // 本地构建保持 dev），不写死源码、不依赖 git 标签（发布构建发生在

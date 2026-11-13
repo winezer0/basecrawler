@@ -90,7 +90,7 @@ func main() {
 	}
 	// writeResult 是结果文件的唯一写入口：Crawl 的 OnResult 与 testfill 的
 	// 确认结果都走这里，保证 scope / -s / -S / 去重 / fsu 口径完全一致。
-	writeResult := func(r assetcrawler.Result) {
+	writeResult := func(r basecrawler.Result) {
 		wmu.Lock()
 		defer wmu.Unlock()
 		if !scopeFilter(r.URL) {
@@ -128,7 +128,7 @@ func main() {
 		}
 	}
 
-	crawler, err := assetcrawler.New(opts)
+	crawler, err := basecrawler.New(opts)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "init failed: %v\n", err)
 		os.Exit(1)

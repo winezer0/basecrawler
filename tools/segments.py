@@ -17,7 +17,7 @@
 用法：
 
   python tools/segments.py --sites tools/segments.sites.json \
-      --bin ./assetcrawler.exe --proxy http://127.0.0.1:10808 \
+      --bin ./basecrawler.exe --proxy http://127.0.0.1:10808 \
       --work-dir /tmp/o2 --json /tmp/o2/segments.json
 """
 import argparse
@@ -54,7 +54,7 @@ def fetch_status(url, proxy="", timeout=15):
     if proxy:
         handlers.append(urllib.request.ProxyHandler({"http": proxy, "https": proxy}))
     opener = urllib.request.build_opener(*handlers)
-    req = urllib.request.Request(url, headers={"User-Agent": "assetcrawler-segments-gate/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "basecrawler-segments-gate/1.0"})
     try:
         with opener.open(req, timeout=timeout) as resp:
             return resp.status
@@ -145,7 +145,7 @@ def render_report(rows, threshold=0.05):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--sites", required=True, help="站点表 json")
-    ap.add_argument("--bin", default="./assetcrawler.exe")
+    ap.add_argument("--bin", default="./basecrawler.exe")
     ap.add_argument("--proxy", default="")
     ap.add_argument("--work-dir", required=True)
     ap.add_argument("--json", default="")

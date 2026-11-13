@@ -1,4 +1,4 @@
-// Package safety 是危险操作拦截的公共工具包，供 assetcrawler、prcrawler
+// Package safety 是危险操作拦截的公共工具包，供 basecrawler、prcrawler
 // 及同生态的其他爬虫共用同一份词表与判定逻辑。
 //
 // 本包零第三方依赖、不认识「爬虫」也不发网络请求，只回答「这条动作是否
@@ -8,14 +8,14 @@
 // 公共 API 面（保持向后兼容，新增字段/函数只做 additive 变更）：
 //
 //	NewSafety(enabled, extraURL, extraForm)            基础入口，prcrawler 用
-//	NewSafetyWithActions(enabled, url, form, action)   完整入口，assetcrawler 用
+//	NewSafetyWithActions(enabled, url, form, action)   完整入口，basecrawler 用
 //	(*Safety).Enabled / SkipURL / SkipForm / SkipRequest
 //	IsSafeMethod(method)                               幂等方法判定
 //
 // 两种调用范式：
 //   - 浏览器爬虫（prcrawler）：在链接入队前调 SkipURL、表单提交前调
 //     SkipForm(action, 字段名+ID)，命中则记录发现但不真实触发。
-//   - 静态爬虫（assetcrawler）：在 testfill 发送测试请求前调
+//   - 静态爬虫（basecrawler）：在 testfill 发送测试请求前调
 //     SkipRequest(method, url, fields)，它串联三类词表并返回拦截原因。
 //
 // 词表只收「明确改变目标状态」的操作类词；password 单独不触发

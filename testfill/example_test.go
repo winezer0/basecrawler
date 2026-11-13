@@ -7,7 +7,7 @@ import (
 // ExampleGenerateRequests 演示完整链路：采集结果（含 curl 代码块与
 // 普通接口）→ 填充测试值 → 渲染成可执行脚本。
 func ExampleGenerateRequests() {
-	results := []assetcrawler.Result{
+	results := []basecrawler.Result{
 		{
 			URL: "https://api.openai.com/v1/chat/completions", Method: "POST",
 			Kind: "curl", StatusCode: 0,
@@ -29,7 +29,7 @@ func ExampleGenerateRequests() {
 	fmt.Print(script)
 	// Output:
 	// #!/bin/sh
-	// # assetcrawler 测试请求（凭证为占位符，执行前替换）
+	// # basecrawler 测试请求（凭证为占位符，执行前替换）
 	//
 	// # body 已按 key 填充测试值
 	// # 头含 $VAR，执行前需设置环境变量

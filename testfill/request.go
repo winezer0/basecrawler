@@ -108,7 +108,7 @@ func looksLikeAssetPath(p string) bool {
 //
 // redirect 是唯一未打标记的历史线索产出点，保留单条兜底。其余新增来源
 // 默认按接口形状放行（fail-open），不会因为漏登记而误杀新接口。
-func isClueResult(r assetcrawler.Result) bool {
+func isClueResult(r basecrawler.Result) bool {
 	if r.StatusCode > 0 || r.Kind == "curl" {
 		return false
 	}
@@ -171,7 +171,7 @@ func (c Config) source() ValueSource {
 // 两类输入：
 //   - Kind=curl：原始命令已含 method/headers/body，按 key 填 body；
 //   - 普通结果：填 URL 模板与查询参数（表单/JS 推断出的参数名）。
-func GenerateRequests(results []assetcrawler.Result, cfg Config) []TestRequest {
+func GenerateRequests(results []basecrawler.Result, cfg Config) []TestRequest {
 	if cfg.DefaultMethod == "" {
 		cfg.DefaultMethod = "GET"
 	}
@@ -218,7 +218,7 @@ func GenerateRequests(results []assetcrawler.Result, cfg Config) []TestRequest {
 	return out
 }
 
-func fromCurl(r assetcrawler.Result, cfg Config, src ValueSource) (TestRequest, bool) {
+func fromCurl(r basecrawler.Result, cfg Config, src ValueSource) (TestRequest, bool) {
 	cmd := extractor.ParseCurl(r.Raw)
 	if cmd == nil {
 		return TestRequest{}, false
@@ -252,7 +252,7 @@ func fromCurl(r assetcrawler.Result, cfg Config, src ValueSource) (TestRequest, 
 	return tr, true
 }
 
-func fromPlain(r assetcrawler.Result, cfg Config, src ValueSource) TestRequest {
+func fromPlain(r basecrawler.Result, cfg Config, src ValueSource) TestRequest {
 	method := r.Method
 	if method == "" {
 		method = cfg.DefaultMethod
@@ -343,7 +343,7 @@ func RenderCurl(reqs []TestRequest) string {
 // 「Method URL → 注释」映射，渲染时追加在行尾。
 func renderCurlLines(reqs []TestRequest, ann map[string]string) string {
 	var b strings.Builder
-	b.WriteString("#!/bin/sh\n# assetcrawler 测试请求（凭证为占位符，执行前替换）\n\n")
+	b.WriteString("#!/bin/sh\n# basecrawler 测试请求（凭证为占位符，执行前替换）\n\n")
 	for i, r := range reqs {
 		if i > 0 {
 			b.WriteString("\n")
@@ -461,8 +461,8 @@ func RenderPostman(reqs []TestRequest) string {
 	}
 	collection := map[string]any{
 		"info": map[string]any{
-			"_postman_id": "assetcrawler-testfill-0001",
-			"name":        "assetcrawler test requests",
+			"_postman_id": "basecrawler-testfill-0001",
+			"name":        "basecrawler test requests",
 			"schema":      "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		},
 		"item": items,

@@ -13,7 +13,7 @@ tools/
 ├── README.md                                  本文件
 ├── baseline.py                                快照 / 对比脚本
 ├── bin/                                       对比用的工具二进制（离线存档）
-│   ├── assetcrawler.exe
+│   ├── basecrawler.exe
 │   ├── cariddi.exe
 │   ├── gospider.exe
 │   ├── hakrawler.exe
@@ -45,7 +45,7 @@ python tools/metrics.py --cover    # 额外跑 go test -cover ./...
 
 | 工具 | 版本 | 体积 | 来源 |
 |---|---|---|---|
-| assetcrawler | 本地构建（devel） | 见 `tools/metrics.py` | 本仓库 |
+| basecrawler | 本地构建（devel） | 见 `tools/metrics.py` | 本仓库 |
 | cariddi | v1.4.6 | 19.3 MB | `github.com/edoardottt/cariddi` |
 | gospider | v1.1.6 | 19.7 MB | `github.com/jaeles-project/gospider` |
 | hakrawler | v0.0.0-20260805040537-52a16fe61bd1 | 17.2 MB | `github.com/hakluke/hakrawler` |
@@ -55,7 +55,7 @@ SHA-256 校验和（用于确认二进制没有被替换或重新编译）：
 
 ```
 9d3e8aa25cbbbffabdd93e3292f8b62d2b36b1e612bfb6f97845ec805ccc3dd8  URLFinder.exe
-c46bb3ca4f0077f42f7a0e56a382993b69bd5eb85a78700b3a6e1f849f8f9938  assetcrawler.exe
+c46bb3ca4f0077f42f7a0e56a382993b69bd5eb85a78700b3a6e1f849f8f9938  basecrawler.exe
 26da72dfbc45e26fa2703de31f06a09f6fe467cd70cec14260f04e29e07e46ed  cariddi.exe
 ee797812fb38b0be8882fd6de126780863cac07a901383a98b30fca686c18016  gospider.exe
 d9564b9260436d34b2919d1c3a33535556d59bc09db96e24353e5fc28a8b147b  hakrawler.exe
@@ -64,7 +64,7 @@ d9564b9260436d34b2919d1c3a33535556d59bc09db96e24353e5fc28a8b147b  hakrawler.exe
 版本号来自二进制内嵌的 Go build info（`go version -m <exe>`），
 比各工具自己的 `-version` 输出更可信——hakrawler 甚至没有 version 参数。
 
-> `assetcrawler.exe` 每次重新构建后校验和都会变，对比时应记录构建时间或
+> `basecrawler.exe` 每次重新构建后校验和都会变，对比时应记录构建时间或
 > git commit，而不是依赖这个哈希。
 
 ## 复现命令
@@ -89,8 +89,8 @@ echo $T | ./bin/cariddi.exe -md 3 -c 10 -t 10 -plain > cariddi.txt
 # URLFinder 深入模式（约 190s，会跟到外链站点）
 ./bin/URLFinder.exe -u $T -m 2 -s all -t 10 -time 5 > urlfinder_m2.txt
 
-# assetcrawler
-./bin/assetcrawler.exe -u $T -d 3 -c 10 -timeout 10 -jsonl -o assetcrawler.jsonl -silent
+# basecrawler
+./bin/basecrawler.exe -u $T -d 3 -c 10 -timeout 10 -jsonl -o basecrawler.jsonl -silent
 ```
 
 ## 用法
@@ -123,7 +123,7 @@ python baseline.py diff tools/baseline/testasp-2026-11-06c <raw_dir>
 
 ## 多工具横向对比
 
-`cmp-2026-11-06/` 是 2026-11-06 的一次爬虫横向对比（katana / crawlergo / assetcrawler），
+`cmp-2026-11-06/` 是 2026-11-06 的一次爬虫横向对比（katana / crawlergo / basecrawler），
 原始输出与结论文档见该目录下的 `REPORT.md`。
 
 对比脚本：
@@ -134,7 +134,7 @@ python tools/compare_tools.py --target <目标> \
 ```
 
 支持解析 katana 的 `-jsonl`、crawlergo 的 `--output-mode json`、
-assetcrawler 的 `-jsonl`、tanscan 的 `/api/v1/scan/task/urls` 响应。
+basecrawler 的 `-jsonl`、tanscan 的 `/api/v1/scan/task/urls` 响应。
 
 ## 现代站点基线（ESM / Vite）
 
@@ -173,8 +173,8 @@ python baseline.py diff baseline/vuejs.org-2026-11-06 <新结果目录>
 配额饱和时的子域抽样）。裁定流程固定为四步，全部用同一代理、同一时段串行跑：
 
 ```bash
-OLD=tools/bin/assetcrawler.exe        # 本地离线存档，对应基线提交 d17a6a4
-NEW=./assetcrawler.exe
+OLD=tools/bin/basecrawler.exe        # 本地离线存档，对应基线提交 d17a6a4
+NEW=./basecrawler.exe
 P=http://127.0.0.1:10808             # 换成自己可用的代理
 FLAGS="-u https://vuejs.org/ -d 2 -max-urls 300 -rl 5 -c 5 -timeout 15 -jsonl -silent -proxy $P"
 
@@ -185,7 +185,7 @@ $NEW $FLAGS -o /tmp/new2.jsonl       # 新二进制连跑，量噪声
 ```
 
 然后用 `baseline.py` 里的 `canonical()` / `stable_of()` / `read_set()` 对四份
-JSONL 与 `urls-assetcrawler.txt` 求站内集合差（口径必须与基线一致）：
+JSONL 与 `urls-basecrawler.txt` 求站内集合差（口径必须与基线一致）：
 
 | 比较 | 含义 |
 |---|---|
@@ -257,7 +257,7 @@ python tools/noise.py --dir /tmp/h0 \
 
 # 分页闸门：每站自动跑「解析链 + 现状采集」并比对
 python tools/pagination.py --sites tools/pagination.sites.json \
-    --bin ./assetcrawler.exe --proxy http://127.0.0.1:10808 \
+    --bin ./basecrawler.exe --proxy http://127.0.0.1:10808 \
     --work-dir /tmp/i2 --json /tmp/i2/pagination.json
 
 # sourcemap 暴露率：Majestic 前 100 域名（支持断点续跑）
@@ -293,7 +293,7 @@ safety 全部默认开启，`-s` 又默认按白名单过滤。不显式关掉�
 python tools/rebaseline.py
 
 # 确认后才真正采集；产物写 tools/rebaseline-out/，不覆盖既有基线
-python tools/rebaseline.py --run --bin ./assetcrawler.exe \
+python tools/rebaseline.py --run --bin ./basecrawler.exe \
     --proxy http://127.0.0.1:10808
 
 # 对拍（旧/新各跑两次，自动裁定）

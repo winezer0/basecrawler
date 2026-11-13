@@ -16,7 +16,7 @@ import (
 // TestGenerateRequestsHiddenMasked：默认不把 hidden 的静态真实值填进 body，
 // 显式 UseHiddenValues 才使用原值；字段名要进入 Fields 供 safety 判定。
 func TestGenerateRequestsHiddenMasked(t *testing.T) {
-	results := []assetcrawler.Result{{
+	results := []basecrawler.Result{{
 		URL:    "https://x/login",
 		Method: "POST",
 		ParamValues: []extractor.ParamValue{

@@ -25,7 +25,7 @@
       "quota": 300,
       "framework": "Vite",
       "note": "ESM chunk 恢复与噪音控制",
-      "baseline": "tools/baseline/vite.dev-2026-11-06/urls-assetcrawler.txt"
+      "baseline": "tools/baseline/vite.dev-2026-11-06/urls-basecrawler.txt"
     },
     {
       "host": "nuxt.com",
@@ -33,7 +33,7 @@
       "quota": 300,
       "framework": "Nuxt",
       "note": "__NUXT_DATA__ 内联 hydration 数据",
-      "baseline": "tools/baseline/nuxt.com-2026-11-10/urls-assetcrawler.txt"
+      "baseline": "tools/baseline/nuxt.com-2026-11-10/urls-basecrawler.txt"
     },
     {
       "host": "developer.mozilla.org",
@@ -41,7 +41,7 @@
       "quota": 300,
       "framework": "MDN",
       "note": "大站、多子域、配额饱和下的子域轮换",
-      "baseline": "tools/baseline/developer.mozilla.org-2026-11-10/urls-assetcrawler.txt"
+      "baseline": "tools/baseline/developer.mozilla.org-2026-11-10/urls-basecrawler.txt"
     },
     {
       "host": "petstore3.swagger.io",
@@ -49,7 +49,7 @@
       "quota": 300,
       "framework": "OpenAPI",
       "note": "spec 探测与接口形状提取",
-      "baseline": "tools/baseline/petstore3.swagger.io-2026-11-10/urls-assetcrawler.txt"
+      "baseline": "tools/baseline/petstore3.swagger.io-2026-11-10/urls-basecrawler.txt"
     },
     {
       "host": "remix.run",
@@ -57,7 +57,7 @@
       "quota": 300,
       "framework": "Remix",
       "note": "__remixContext 与 RSC flight 提取",
-      "baseline": "tools/baseline/remix.run-2026-11-10/urls-assetcrawler.txt"
+      "baseline": "tools/baseline/remix.run-2026-11-10/urls-basecrawler.txt"
     }
   ]
 }

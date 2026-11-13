@@ -9,9 +9,9 @@
 否则结果是网络不可达不是能力回退。
 
 ```bash
-HTTPS_PROXY=http://127.0.0.1:10808 ./assetcrawler.exe \
+HTTPS_PROXY=http://127.0.0.1:10808 ./basecrawler.exe \
     -u https://news.ycombinator.com/ -d 2 -max-urls 300 -rl 5 -c 5 \
-    -timeout 15 -jsonl -o raw/assetcrawler.jsonl -silent
+    -timeout 15 -jsonl -o raw/basecrawler.jsonl -silent
 ```
 
 | 指标 | 值 |

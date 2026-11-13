@@ -23,7 +23,7 @@ https://docs.gitlab.com/gitlab_ui/svgs-latest/icons.svg
 https://gitlab.com/-/trial_registrations/new?glm_source=docs.gitlab.com&amp;glm_content=navigation-cta-docs
 https://about.gitlab.com/whats-new/
 #!/bin/sh
-# assetcrawler 测试请求（凭证为占位符，执行前替换）
+# basecrawler 测试请求（凭证为占位符，执行前替换）
 
 # body 已按 key 填充测试值
 curl -X POST 'https://gitlab.example.com/api/v4/projects' -H 'Authorization: Bearer ${GITLAB_TOKEN}' -H 'Content-Type: application/json' -d '{"description":"sample-1","name":"user1"}'  # 跳过: POST 非幂等方法，需 AllowUnsafe 才发送

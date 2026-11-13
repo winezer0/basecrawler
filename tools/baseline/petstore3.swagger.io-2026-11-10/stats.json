@@ -17,7 +17,7 @@
     "URLFinder-m2": {
       "status": "no_output"
     },
-    "assetcrawler": {
+    "basecrawler": {
       "status": "ok",
       "inside_unique": 45,
       "outside_unique": 2,

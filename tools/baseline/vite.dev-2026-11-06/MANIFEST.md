@@ -5,8 +5,8 @@
 命令：
 
 ```bash
-./assetcrawler.exe -u https://vite.dev/ -d 2 -max-urls 300 -rl 5 -c 5 \
-    -timeout 15 -jsonl -o raw/assetcrawler.jsonl -silent
+./basecrawler.exe -u https://vite.dev/ -d 2 -max-urls 300 -rl 5 -c 5 \
+    -timeout 15 -jsonl -o raw/basecrawler.jsonl -silent
 ```
 
 代码：`0f95456` 之后（A/B/C/D 四批 + CSP 线索接入）
@@ -34,8 +34,8 @@
 
 | 文件 | 内容 |
 |---|---|
-| `raw/assetcrawler.jsonl` | 原始输出 |
-| `urls-assetcrawler.txt` | 站内 URL（canonical） |
+| `raw/basecrawler.jsonl` | 原始输出 |
+| `urls-basecrawler.txt` | 站内 URL（canonical） |
 | `urls-stable.txt` | 站内 + hash 归一化，**回归对比用这一份** |
 | `stats.json` | 计数与时间戳 |
 

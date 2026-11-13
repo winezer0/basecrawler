@@ -37,7 +37,7 @@ SCRIPT_SRC_RE = re.compile(
     r"""<script\b[^>]*?\bsrc\s*=\s*["']([^"']+)["']""", re.I)
 JS_EXT_RE = re.compile(r"\.js(?:\?|$)|\.mjs(?:\?|$)", re.I)
 
-UA = "assetcrawler-mapexposure/1.0"
+UA = "basecrawler-mapexposure/1.0"
 
 
 def tail_of(data, n):

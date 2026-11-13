@@ -57,7 +57,7 @@ SPEC_CANDIDATES = [
     "/swagger/v2/swagger.json",
 ]
 
-UA = "assetcrawler-openapi-gate/1.0"
+UA = "basecrawler-openapi-gate/1.0"
 GATE_THRESHOLD = 0.10  # 与 I-1/I-3 同口径：10%
 
 

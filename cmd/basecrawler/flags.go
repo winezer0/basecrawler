@@ -31,7 +31,7 @@ type cliConfig struct {
 	// URLs 目标地址，来自可重复的 -u，逗号分隔也会被拆开。
 	URLs []string
 	// Opts 与命令行参数一一对应。
-	Opts *assetcrawler.Options
+	Opts *basecrawler.Options
 	// OutputPath 输出文件路径；空表示 stdout。
 	OutputPath string
 	// OutputType 输出格式：json（JSONL）| txt（纯 URL），默认 json。
@@ -188,7 +188,7 @@ func parseArgs(args []string, errOut io.Writer) (*cliConfig, error) {
 		return nil, errNoTarget
 	}
 
-	opts := assetcrawler.DefaultOptions()
+	opts := basecrawler.DefaultOptions()
 	opts.MaxDepth = spec.Depth
 	opts.Concurrency = spec.Concurrency
 	opts.PerHostConcurrency = spec.PerHost
@@ -209,9 +209,9 @@ func parseArgs(args []string, errOut io.Writer) (*cliConfig, error) {
 	opts.ExtractJS = !spec.NoJS
 	// 引擎名必须校验：JSEngine 的零值等价于 auto，拼错的名字会静默
 	// 落到默认分支——用户以为指定了 goja，其实拿到的可能不是他想要的。
-	switch name := assetcrawler.JSEngine(spec.JSEngine); name {
-	case assetcrawler.JSEngineAuto, assetcrawler.JSEngineRegex,
-		assetcrawler.JSEngineGoja, assetcrawler.JSEngineTreesitter:
+	switch name := basecrawler.JSEngine(spec.JSEngine); name {
+	case basecrawler.JSEngineAuto, basecrawler.JSEngineRegex,
+		basecrawler.JSEngineGoja, basecrawler.JSEngineTreesitter:
 		opts.JSEngine = name
 	default:
 		return nil, fmt.Errorf("invalid -js-engine %q: want auto|regex|goja|treesitter", spec.JSEngine)
@@ -235,12 +235,12 @@ func parseArgs(args []string, errOut io.Writer) (*cliConfig, error) {
 		if err != nil {
 			return nil, fmt.Errorf("cannot read -fuzz-dict: %w", err)
 		}
-		dict := assetcrawler.ParseFuzzDict(string(content))
+		dict := basecrawler.ParseFuzzDict(string(content))
 		if len(dict) == 0 {
 			return nil, fmt.Errorf("-fuzz-dict %q has no usable paths", spec.FuzzDictFile)
 		}
 		// 追加语义：内置字典 + 自定义路径，保序去重。
-		opts.FuzzDict = assetcrawler.AppendFuzzDict(assetcrawler.BuiltinFuzzDict(), dict)
+		opts.FuzzDict = basecrawler.AppendFuzzDict(basecrawler.BuiltinFuzzDict(), dict)
 	}
 	if spec.UA != "" {
 		opts.UserAgent = spec.UA
@@ -248,16 +248,16 @@ func parseArgs(args []string, errOut io.Writer) (*cliConfig, error) {
 
 	switch spec.Scope {
 	case "fqdn", "same-host":
-		opts.Scope = assetcrawler.ScopeSameHost
+		opts.Scope = basecrawler.ScopeSameHost
 	case "dn":
-		opts.Scope = assetcrawler.ScopeDN
+		opts.Scope = basecrawler.ScopeDN
 	case "regex":
-		opts.Scope = assetcrawler.ScopeRegex
+		opts.Scope = basecrawler.ScopeRegex
 	case "all", "any":
-		opts.Scope = assetcrawler.ScopeAny
+		opts.Scope = basecrawler.ScopeAny
 	default:
 		// rdn / subdomain
-		opts.Scope = assetcrawler.ScopeSubdomain
+		opts.Scope = basecrawler.ScopeSubdomain
 	}
 	if spec.ScopeRegex != "" {
 		re, err := regexp.Compile(spec.ScopeRegex)
@@ -266,7 +266,7 @@ func parseArgs(args []string, errOut io.Writer) (*cliConfig, error) {
 		}
 		opts.ScopeRegex = re
 	}
-	if opts.Scope == assetcrawler.ScopeRegex && opts.ScopeRegex == nil {
+	if opts.Scope == basecrawler.ScopeRegex && opts.ScopeRegex == nil {
 		return nil, fmt.Errorf("-scope regex 需要配合 -scope-regex 提供正则")
 	}
 
@@ -388,7 +388,7 @@ func defaultOutputPath(seed, ext string, now time.Time) string {
 
 // applyHeaders 把 "K: V" 形式的 -H 合并进 Options.Headers。
 // 没有冒号的条目直接忽略：它不可能是合法头，报错反而打断批量脚本。
-func applyHeaders(opts *assetcrawler.Options, headers []string) {
+func applyHeaders(opts *basecrawler.Options, headers []string) {
 	for _, h := range headers {
 		k, v, ok := strings.Cut(h, ":")
 		if !ok {

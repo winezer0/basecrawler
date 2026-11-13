@@ -7,8 +7,8 @@ import (
 	"github.com/winezer0/basecrawler/extractor"
 )
 
-func fixtureResults() []assetcrawler.Result {
-	return []assetcrawler.Result{
+func fixtureResults() []basecrawler.Result {
+	return []basecrawler.Result{
 		{
 			URL: "https://api.openai.com/v1/chat/completions", Method: "POST",
 			Kind: "curl", StatusCode: 0,
@@ -157,7 +157,7 @@ func TestRenderPostman(t *testing.T) {
 		Body:    `{"a":1}`,
 	}}
 	got := RenderPostman(reqs)
-	for _, want := range []string{`"info"`, `"_postman_id"`, `"name": "assetcrawler test requests"`, `"raw"`, `"url"`, `"method": "POST"`, `"body"`} {
+	for _, want := range []string{`"info"`, `"_postman_id"`, `"name": "basecrawler test requests"`, `"raw"`, `"url"`, `"method": "POST"`, `"body"`} {
 		if !strings.Contains(got, want) {
 			t.Errorf("collection 缺 %s: %s", want, got)
 		}
@@ -190,7 +190,7 @@ func TestRenderDispatch(t *testing.T) {
 
 // O-1 真实数据：文档站自身资产（同种子域）默认不进测试请求。
 func TestGenerateRequestsSiteHosts(t *testing.T) {
-	results := []assetcrawler.Result{
+	results := []basecrawler.Result{
 		{URL: "https://api.github.com/user/repos", Method: "GET",
 			Kind: "curl", StatusCode: 0, Raw: `curl https://api.github.com/user/repos -H "Authorization: Bearer <YOUR-TOKEN>"`},
 		{URL: "https://docs.github.com/assets/cb-345/images/site/favicon.png", Method: "GET",
@@ -214,7 +214,7 @@ func TestGenerateRequestsSiteHosts(t *testing.T) {
 
 // O-1 数据：无 Authorization 头的 curl 命令被统一加认证头占位。
 func TestGenerateRequestsAuthAddedWhenMissing(t *testing.T) {
-	results := []assetcrawler.Result{{
+	results := []basecrawler.Result{{
 		URL: "https://api.github.com/repos/o/r", Method: "GET",
 		Kind: "curl", StatusCode: 0,
 		Raw: `curl https://api.github.com/repos/o/r -H "Accept: application/vnd.github+json"`,
@@ -228,7 +228,7 @@ func TestGenerateRequestsAuthAddedWhenMissing(t *testing.T) {
 // O-1 真实数据：CSP/robots 等情报线索不进测试请求。判定改为语义标记
 // （Confidence=clue），未标记的新来源按接口形状放行（fail-open）。
 func TestGenerateRequestsSkipClueSources(t *testing.T) {
-	results := []assetcrawler.Result{
+	results := []basecrawler.Result{
 		{URL: "https://collector.githubapp.com", Method: "GET",
 			StatusCode: 0, Source: "csp:report-to", Confidence: "clue"},
 		{URL: "https://target/secret", Method: "GET",
@@ -252,7 +252,7 @@ func TestGenerateRequestsSkipClueSources(t *testing.T) {
 // 资产——表单 action 指向本站 /login 时（单页应用的 API 多在同站），
 // 真正的接口被滤掉。修正：同站 + 资产路径才滤，接口路径不滤。
 func TestSiteHostsFilterOnlyAssets(t *testing.T) {
-	results := []assetcrawler.Result{
+	results := []basecrawler.Result{
 		{URL: "https://site.com/login", Method: "GET", StatusCode: 0,
 			Source: "form", Kind: "page"}, // 同站表单接口：不该滤
 		{URL: "https://site.com/api/items", Method: "GET", StatusCode: 0,
@@ -312,7 +312,7 @@ func TestLooksLikeAssetPath(t *testing.T) {
 // 拼到 query 上会改变语义（M 批次代码注释里的既有约定，此前
 // fromPlain 对 method 不分区，全部拼 query）。
 func TestGenerateRequestsFormBodyForPost(t *testing.T) {
-	results := []assetcrawler.Result{{
+	results := []basecrawler.Result{{
 		URL: "https://site.com/login", Method: "POST", StatusCode: 0,
 		Source: "form", Attribute: "action", Confidence: "interface",
 		Params: []string{"email", "password"},

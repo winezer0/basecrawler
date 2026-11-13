@@ -5,8 +5,8 @@
 命令：
 
 ```bash
-./assetcrawler.exe -u https://vuejs.org/ -d 2 -max-urls 300 -rl 5 -c 5 \
-    -timeout 15 -jsonl -o raw/assetcrawler.jsonl -silent
+./basecrawler.exe -u https://vuejs.org/ -d 2 -max-urls 300 -rl 5 -c 5 \
+    -timeout 15 -jsonl -o raw/basecrawler.jsonl -silent
 ```
 
 代码：`0f95456` 之后（A/B/C/D 四批 + CSP 线索接入）
@@ -28,15 +28,15 @@ CSP 线索），旧基线已经不能用来判断回归，因此按当前代码�
 与本次结果逐行相同（297 / 297），说明这一轮的改动对本站**没有丢任何 URL**。
 
 唯一的新增是外链 `a.nel.cloudflare.com/report/...`，来自 CSP 的 `report-to`。
-它不属站内，所以不计入 `urls-assetcrawler.txt` 与 `urls-stable.txt`，
-在 `raw/assetcrawler.jsonl` 里可以查到，`kind=csp-report`。
+它不属站内，所以不计入 `urls-basecrawler.txt` 与 `urls-stable.txt`，
+在 `raw/basecrawler.jsonl` 里可以查到，`kind=csp-report`。
 
 ## 文件说明
 
 | 文件 | 内容 |
 |---|---|
-| `raw/assetcrawler.jsonl` | 原始输出，保留以便复查（P2-2 的教训） |
-| `urls-assetcrawler.txt` | 站内 URL（canonical：去 scheme、去尾斜杠） |
+| `raw/basecrawler.jsonl` | 原始输出，保留以便复查（P2-2 的教训） |
+| `urls-basecrawler.txt` | 站内 URL（canonical：去 scheme、去尾斜杠） |
 | `urls-stable.txt` | 站内 URL + hash 归一化（`app.<HASH>.js`），**回归对比用这一份** |
 | `stats.json` | 计数与时间戳 |
 

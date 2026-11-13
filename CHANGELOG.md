@@ -18,7 +18,7 @@
   长 flag，写成单横线会被当成 `-j` 直接退出 2；同时显式 `-s all` /
   `--scope all` / `--no-fuzz`，让夹具只量提取能力、不受默认输出策略影响
   （实测 20/20 载体、5/5 方法、3/3 参数、0 噪音）。
-- 修 `cmd/assetcrawler/main.go` 中「关键字拦截尚未实现」的过时注释。
+- 修 `cmd/basecrawler/main.go` 中「关键字拦截尚未实现」的过时注释。
 - **已验证**（本地对齐 CI 全步骤）：`gofmt`、`go vet ./...`、
   `go test -race ./...`（22 包全绿）、`go test -cover ./...`、`go build`、
   tools 112 项 + probe 4 项 Python 单测、探针夹具、`metrics.py --gate`。
@@ -47,7 +47,7 @@
 ### 发送安全链、线索语义化与调度去重（2026-11-13，破坏性变更）
 
 - **新增 `safety/` 包**：参考 `prcrawler/internal/crawl/safety.go`，零第三方依赖、
-  `NewSafety` 签名保持兼容（prcrawler 后续可在 assetcrawler 发版后直接 import）。
+  `NewSafety` 签名保持兼容（prcrawler 后续可在 basecrawler 发版后直接 import）。
   内置登出 / 改密 / 删除词表 + 非幂等方法动作词表，在 testfill 发送前拦截；
   命中只记 `SkipReason`，发现结果不受损。CLI 默认开启，`--no-safety` 关闭，
   `--safety-url-skip` / `--safety-form-skip` 追加正则（非法正则启动即报错）。
@@ -445,7 +445,7 @@ ESM 部署形态的载体缺口。
 首个语义化版本。公共 API 面已冻结：`New / Crawl / Close / Limits /
 DefaultOptions / Options / Result / OnResult / OnError`。
 
-- **库化（批次 J）**：模块迁移到 `github.com/winezer0/assetcrawler`，
+- **库化（批次 J）**：模块迁移到 `github.com/winezer0/basecrawler`，
   可 `go get`；`Crawler` 契约为「一实例一采集」（二次 `Crawl` 显式报错）；
   `Close` 后 `Crawl` 报 closed（修复了此前不生效的检查）；根包新增可运行
   `Example`（godoc 可见）。

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """pagination.py —— 响应体分页「漏检量」闸门（批次 I-2）。
 
-回答一个具体问题：对含分页的公开 API 站点，assetcrawler 现状会漏掉多少
+回答一个具体问题：对含分页的公开 API 站点，basecrawler 现状会漏掉多少
 「下一页」URL？按三类分页形态分别量化：
 
 - explicit     显式字段（next / next_url / nextPage…）——FromJSON 遍历全部
@@ -17,7 +17,7 @@
 用法：
 
   python tools/pagination.py --sites tools/pagination.sites.json \
-      --bin ./assetcrawler.exe --proxy http://127.0.0.1:10808 \
+      --bin ./basecrawler.exe --proxy http://127.0.0.1:10808 \
       --work-dir /tmp/i2 --json /tmp/i2/pagination.json
 """
 import argparse
@@ -158,7 +158,7 @@ def fetch(url, proxy="", timeout=20, retries=2):
             {"http": proxy, "https": proxy}))
     opener = urllib.request.build_opener(*handlers)
     req = urllib.request.Request(url, headers={
-        "User-Agent": "assetcrawler-pagination-gate/1.0",
+        "User-Agent": "basecrawler-pagination-gate/1.0",
         "Accept": "application/json",
     })
     last = None
@@ -292,7 +292,7 @@ def render_report(rows):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--sites", required=True, help="站点表 json")
-    ap.add_argument("--bin", default="./assetcrawler.exe", help="assetcrawler 可执行文件")
+    ap.add_argument("--bin", default="./basecrawler.exe", help="basecrawler 可执行文件")
     ap.add_argument("--proxy", default="", help="HTTP(S) 代理")
     ap.add_argument("--work-dir", required=True, help="中间产物目录")
     ap.add_argument("--json", default="", help="结果 JSON 输出路径")

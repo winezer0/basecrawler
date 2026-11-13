@@ -13,7 +13,7 @@
 
 用法：
     python testdata/vue_fixture.py            # 监听 127.0.0.1:18096
-    assetcrawler -u http://127.0.0.1:18096/ -d 3 -jsonl -js-engine goja
+    basecrawler -u http://127.0.0.1:18096/ -d 3 -jsonl -js-engine goja
 
 期望结果（goja / treesitter 两个引擎应完全一致）：
 
